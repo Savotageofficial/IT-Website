@@ -5,48 +5,52 @@
         <link rel="stylesheet" href="ExamTable.css">
         <title>EXAM TAble</title>
     </head>
-    <div class="mo">
     <div class="container">
         <div class="header">
-            <div class="menu_icon"><h2><a class="dark" href="#"><span class="material-symbols-outlined">dark_mode</span><span>Dark Mode</span></a></h2></div>
+            <div class="menu_icon"><h2><button onclick="toggleDarkMode()" class="dark" href="#"><span class="material-symbols-outlined">dark_mode</span></button></div>
             <div class="title">
             Helwan university
           </div>
           <div class="logo">
-            <img src="logo.jpeg" alt="university's logo" style="height: 70px; width: 70px;border-radius: 30px;">
+            <img src="logo.jpg" alt="university's logo" style="height: 70px; width: 70px;border-radius: 30px;">
           </div>
         </div>
     </div>
-    <div class="menu">
-        <ul class="menu-content">
-            <li><a href="C:\Users\moham\Downloads\IT Project\website\home\Home.html"><span class="material-symbols-outlined">home</span><span>Home</span></a></li>
-                    <li><a href="C:\Users\moham\Downloads\IT Project\website\login (mariam)\index (1).html"><span class="material-symbols-outlined">Login</span><span>Login</span></a></li>
-                    <li><a href="C:\Users\moham\Downloads\IT Project\website\Books Page (menna)\Books.html"><span class="material-symbols-outlined">Book</span><span>Books Page</span></a></li>
-                    <li><a href="C:\Users\moham\Downloads\IT Project\website\Lectures (mohamed)\Lectures.html"><span class="material-symbols-outlined">School</span><span>Lectures</span></a></li>
-                    <li><a href="#"><span class="material-symbols-outlined">settings</span><span>Settings</span></a></li>
-                    <li><a href="C:\Users\moham\Downloads\IT Project\website\Student's Information (menna)\StudentInfo.html"><span class="material-symbols-outlined">person</span><span>Account</span></a></li>
-                    <li><a href="C:\Users\moham\Downloads\IT Project\website\Map Page (moayad)\Map.html"><span class="material-symbols-outlined">Map</span><span>Our Map</span></a></li>
-                    <li><a href="#"><span class="material-symbols-outlined">logout</span><span>Logout</span></a></li>
-        </ul>
-    </div>
-</div>
+<body>
+      <div id="en" class="hiddenen">    
 <div class="body" >
-    <body >
+    <div class="menu">
+                <ul class="menu-content">
+                    <li><a href="https://savotageofficial.github.io/IT-website/"><span class="material-symbols-outlined">home</span><span>Home</span></a></li>
+                    <li><a href="https://savotageofficial.github.io/IT-website/login%20(mariam)/login.html"><span class="material-symbols-outlined">Login</span><span>Login</span></a></li>
+                    <li><a href="https://savotageofficial.github.io/IT-website/Books%20Page%20(menna)/University-textbooks-2-1.html"><span class="material-symbols-outlined">Book</span><span>Books Page</span></a></li>
+                    <li><a href="https://savotageofficial.github.io/IT-website/Lectures%20(mohamed)/Lectures.html"><span class="material-symbols-outlined">School</span><span>Lectures</span></a></li> <li>
+                    <li><a href="#" onclick="hide(); return false;"><span class="material-symbols-outlined">translate</span><span>Translate</span></a></li>                
+                    <li><a href="Student's Information (menna)/Profile-page-3 (1).html"><span class="material-symbols-outlined">person</span><span>Account</span></a></li>
+                    <li><a href="https://savotageofficial.github.io/IT-website/Map%20Page%20(moayad)/Map.html"><span class="material-symbols-outlined">Map</span><span>Our Map</span></a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">logout</span><span>Logout</span></a></li>
+                </ul>
+            </div>
         <h1 class="head">EXAM TIMETABLE:</h1>
-        <p class="infomation">NAME:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YEAR:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <div class="infomation"><p class="information1">NAME:</p>
+            <div class="inner-info">
+                <p class="information2">ID:</p>
+                <p class="information3">YEAR:</p>
+            </div>
+        </div>
         <table>
-            <THead>
+            <Thead>
                 <tr>
-                    <td>Date</td>
-                    <td>Code</td>
-                    <td>Course</td>
-                    <td>Time</td>
-                    <td>Committee</td>
-                    <td>Committee Place</td>
-                    <td>Seat NO</td>
-                    <td>Notes</td>
+                    <th>Date</th>
+                    <th>Code</th>
+                    <th>Course</th>
+                    <th>Time</th>
+                    <th>Committee</th>
+                    <th>Committee Place</th>
+                    <th>Seat NO</th>
+                    <th>Notes</th>
                 </tr>
-            </THead>
+            </Thead>
             <tbody>
                 <tr>
                     <td>sunday</td>
@@ -120,6 +124,117 @@
                 </tr>
         </tbody>
         </table>
-    </body>
+    </div>
+      </div>
+<div id="ar">
+<div class="body" >
+    <div class="menu">
+                <ul class="menu-content">
+                    <li><a href="https://savotageofficial.github.io/IT-website/"><span class="material-symbols-outlined">home</span><span>Home</span></a></li>
+                    <li><a href="https://savotageofficial.github.io/IT-website/login%20(mariam)/login.html"><span class="material-symbols-outlined">Login</span><span>Login</span></a></li>
+                    <li><a href="https://savotageofficial.github.io/IT-website/Books%20Page%20(menna)/University-textbooks-2-1.html"><span class="material-symbols-outlined">Book</span><span>Books Page</span></a></li>
+                    <li><a href="https://savotageofficial.github.io/IT-website/Lectures%20(mohamed)/Lectures.html"><span class="material-symbols-outlined">School</span><span>Lectures</span></a></li> <li>
+    <li><a href="#" onclick="hide(); return false;"><span class="material-symbols-outlined">translate</span><span>Translate</span></a></li>                
+                <li><a href="Student's Information (menna)/Profile-page-3 (1).html"><span class="material-symbols-outlined">person</span><span>Account</span></a></li>
+                    <li><a href="https://savotageofficial.github.io/IT-website/Map%20Page%20(moayad)/Map.html"><span class="material-symbols-outlined">Map</span><span>Our Map</span></a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">logout</span><span>Logout</span></a></li>
+                </ul>
+            </div>
+<h1 class="head">EXAM TIMETABLE:</h1>
+        <div class="infomation"><p class="information1" style="text-align: right;">:الاسم</p>
+            <div class="inner-infoar">
+                <p class="information3" >:السنة الدراسيه</p>
+                <p class="information2" >:كود الطالب</p>
+            </div>
+        </div>
+         <table>
+            <Thead>
+                <tr>
+                    <th>التاريخ</th>
+                    <th>الكود</th>
+                    <th>المقرر</th>
+                    <th>الوقت</th>
+                    <th>اللجنة</th>
+                    <th>مكان اللجنة</th>
+                    <th>رقم الجلوس</th>
+                    <th>ملاحظات</th>
+                </tr>
+            </Thead>
+            <tbody>
+                <tr>
+                    <td>الاحد</td>
+                    <td>999</td>
+                    <td>لغه انجليزيه</td>
+                    <td>9:00</td>
+                    <td>قاعه2</td>
+                    <td>الدور الاول</td>
+                    <td>80</td>
+                    <td>ساعتين</td>
+                </tr>
+                <tr>
+                    <td>الاثنين</td>
+                    <td>586</td>
+                    <td>تكنولوجيا الانترنت</td>
+                    <td>10:00</td>
+                    <td>قاعه6</td>
+                    <td>الدور4</td>
+                    <td>90</td>
+                    <td>ساعتين</td>
+                </tr>
+                <tr>
+                    <td>الثلاثاء</td>
+                    <td>230</td>
+                    <td>تصميم منطقي</td>
+                    <td>11:00</td>
+                    <td>قاعه 1</td>
+                    <td>الدور الاول</td>
+                    <td>85</td>
+                    <td>ساعتين</td>
+                </tr>
+                <tr>
+                    <td>الاربعاء</td>
+                    <td>756</td>
+                    <td>برمجه الحاسب</td>
+                    <td>3:00</td>
+                    <td>قاعه 8</td>
+                    <td>الدور الخامس</td>
+                    <td>65</td>
+                    <td>ساعتين </td>
+                </tr>
+                <tr>
+                    <td>الخميس</td>
+                    <td>320</td>
+                    <td> قضايا مجتمعيه</td>
+                    <td>9:00</td>
+                    <td>قاعه2</td>
+                    <td>الدور الاول</td>
+                    <td>80</td>
+                    <td>ساعتين </td>
+                </tr>
+                <tr>
+                    <td>الجمعه</td>
+                    <td>_</td>
+                    <td>_</td>
+                    <td>_</td>
+                    <td>_</td>
+                    <td>_</td>
+                    <td>   _      </td>
+                    <td>_</td>
+                </tr>
+                <tr>
+                    <td>السبت</td>
+                    <td>844</td>
+                    <td>رياضيات</td>
+                    <td>9:00</td>
+                    <td>7قاعه </td>
+                    <td>الدور الخامس</td>
+                    <td>84</td>
+                    <td>ساعتين </td>
+                </tr>
+        </tbody>
+        </table>
+    </div>
 </div>
+    </body>
+<script src="ExamTable.js"></script>
 </html>

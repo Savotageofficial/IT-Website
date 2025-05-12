@@ -40,7 +40,6 @@
     backdrop-filter: blur(5px);
     box-shadow: 8px 0px 9px 0px #00000014;
     border-radius: 30px;
-    border:1px solid white;
     z-index: 1;
 }
 
@@ -86,7 +85,7 @@ a {
     margin-right: 10px;
     border-radius: 50%;
     background: #00188F;
-      
+    border:2px white solid;
 }
 .header{
            background-color:#00188F;
@@ -139,7 +138,27 @@ a {
         #en.hiddenen{
             display: block;
         }
-      
+     #ar.hiddenar .p1 {
+    flex-direction: row-reverse;
+  }
+
+  #ar.hiddenar .personal-info {
+    padding-right: 20%;
+    padding-left: 0;
+  }
+
+  #ar.hiddenar .action {
+    padding-left: 0;
+    padding-right: 53%;
+  }
+
+  #ar.hiddenar .name,
+  #ar.hiddenar .id-number,
+  #ar.hiddenar .gender,
+  #ar.hiddenar .national-number {
+    padding-left: 0;
+    padding-right: 90%;
+  }
       
       
       
@@ -171,7 +190,7 @@ a {
            margin-bottom:5px;  
            font-style:italic; 
            font-size:30px;  
-           color: #000000;       
+           color: #000000;      
   }
   
   .Student-information, .Contact-information, .Academic-information {     
@@ -185,9 +204,10 @@ a {
          height:230px;
          border-top-left-radius:20px;
          border-bottom-right-radius:20px; 
-         background-color: rgba(0, 0, 10, .2);    
+         background-color:cornflowerblue;
+               background-image: linear-gradient(cornflowerblue, #000);   
+        background:transparent;
          color:#000000;   
-         background:transparent;
          backdrop-filter:blur(5px);    
          border:1px solid white;   
          z-index: -2;  
@@ -228,6 +248,7 @@ a {
 }     
 .name, .id-number, .gender, .national-number{
         padding-left:90%;
+        width:300px;
 }     
 .p1{
        display:flex;
@@ -243,7 +264,7 @@ a {
      
      
 .button-a {
-  margin-left:200%;  
+  margin-left:140%;  
   height:40px;
   width:280px;   
   font-size: 18px;
@@ -374,7 +395,7 @@ a {
         
    <div class="menu">
                 <ul class="menu-content">
-                      <button onclick="hide()" id="langToggle" class="language-button"><span class="material-symbols-outlined">language</span></button>
+                    <li><a onclick="hide()" id="langToggle" class="language-button"><span class="material-symbols-outlined">language</span></a></li>
                     <li><a href="#"><span class="material-symbols-outlined">home</span><span>Home</span></a></li>
                     <li><a href="#"><span class="material-symbols-outlined">Login</span><span>Login</span></a></li>
                     <li><a href="content://com.sec.android.app.myfiles.FileProvider/device_storage/0/%D8%A8%D9%8A%D8%AF%D8%AC%D8%A7%D8%AA%D9%8A/University-textbooks-2.html">
@@ -406,10 +427,10 @@ a {
                 <h5>personal photo</h5>
         </div>  
               <div class="personal-info"  >
-    <p class="name">Name:</p>
-    <p class="id-number">ID number:</p>
-    <p class="gender">Gender:</p>
-    <p class="national-number">National number:</p>
+    <p class="name">Name:Mennat Allah</p>
+    <p class="id-number">ID number:123456</p>
+    <p class="gender">Gender:female</p>
+    <p class="national-number">National number:12345678912355</p>
               </div>
        
               <div class="action">
@@ -422,19 +443,19 @@ a {
  
   <div class="Contact-information">
     <h3>Contact information:</h3>
-    <p>Personal E-mail:</p>
-    <p>Phone number:</p>
-    <p>Another phone:</p>
-    <p>Place of residence:</p>
+    <p>Personal E-mail:abc@gmail.com</p>
+    <p>Phone number:01072957392</p>
+    <p>Another phone:01138592834</p>
+    <p>Place of residence:cairo</p>
   </div>
  
   <div class="Academic-information">
     <h3>Academic information:</h3>
-    <p>college:</p>
-    <p>university:</p>
-    <p>university E-mail:</p>
-    <p>City:</p>
-    <p>Date of joinig the college:</p>
+    <p>college:AI and computer science</p>
+    <p>university:Helwan Universiry</p>
+    <p>university E-mail:abckk@gmail.com</p>
+    <p>City:Helwan</p>
+    <p>Date of joinig the college:1/1/001</p>
   </div>
   </div>
       
@@ -458,10 +479,10 @@ a {
                 <h5>:الصورة الشخصية</h5>
         </div>  
               <div class="personal-info"  >
-    <p class="name">:الإسم</p>
-    <p class="id-number">:الرقم التعريفي</p>
-    <p class="gender">:النوع</p>
-    <p class="national-number"> :الرقم القومي</p>
+    <p class="name">الإسم:منة الله</p>
+    <p class="id-number">123456:الرقم التعريفي</p>
+    <p class="gender">النوع:أنثى</p>
+    <p class="national-number">الرقم القومي:12345678912345</p>
               </div>
        
               <div class="action">
@@ -474,19 +495,19 @@ a {
  
   <div class="Contact-information">
     <h3>:بيانات التواصل</h3>
-    <p>:الإيميل الشخصي</p>
-    <p>:رقم الهاتف</p>
-    <p>:رقم هاتف آخر</p>
-    <p>:مكان الإقامة</p>
+    <p>abc@gmail.com:الإيميل الشخصي</p>
+    <p>01072957392:رقم الهاتف</p>
+    <p>01138592834:رقم هاتف آخر</p>
+    <p>مكان الاقامة:القاهرة</p>
   </div>
  
   <div class="Academic-information">
-    <h3>:بيانات تعليمية</h3>
-    <p>:الكلية</p>
-    <p>:الجامعة</p>
-    <p>:الإيميل الجامعي</p>
-    <p>:المدينة</p>
-    <p>:تاريخ الإنضمام للكلية</p>
+    <h3>:بيانات تعليمي</h3>
+    <p>الكلية:حاسبات و معلومات</p>
+    <p>الجامعة:حلوان</p>
+    <p>abckk@gmaol.com:الإيميل الجامعي</p>
+    <p>المدينة:حلوان</p>
+    <p>1/1/001:تاريخ الإنضمام للكلية</p>
   </div>
   </div>
     <script >

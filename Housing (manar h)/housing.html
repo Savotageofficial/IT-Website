@@ -1,12 +1,16 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <title>test2</title>
-    <link rel="stylesheet" href="housing.css">
+    <title>Housing</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="main.js"></script>
 </head>
 <body style="color: rgb(12, 12, 12);">
+  <div id="en" class="hiddenen">
     <div class="container">
         <div class="header">
-            <div class="menu_icon"><h2><a class="dark" href="#"><span class="material-symbols-outlined">dark_mode</span><span>Dark Mode</span></a></h2></div>
+          <div class="menu_icon"><h2><button onclick="toggleDarkMode()" class="dark" href="#"><span class="material-symbols-outlined" id="dark_mod"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q8 0 17 .5t23 1.5q-36 32-56 79t-20 99q0 90 63 153t153 63q52 0 99-18.5t79-51.5q1 12 1.5 19.5t.5 14.5q0 150-105 255T480-120Zm0-60q109 0 190-67.5T771-406q-25 11-53.67 16.5Q688.67-384 660-384q-114.69 0-195.34-80.66Q384-545.31 384-660q0-24 5-51.5t18-62.5q-98 27-162.5 109.5T180-480q0 125 87.5 212.5T480-180Zm-4-297Z"/></svg></span></button><span style="color: white;">Dark mode</span>
+               </h2></div>
           <div class="title">
            <h1 class="moayad" > Helwan university</h1>
           </div>
@@ -16,22 +20,23 @@
         </div>
           </div>
 <div class="menu">
-    <ul class="menu-content">
-      <li><a href="C:\Users\moham\Downloads\IT Project\website\home\Home.html"><span class="material-symbols-outlined">home</span><span>Home</span></a></li>
-      <li><a href="C:\Users\moham\Downloads\IT Project\website\login (mariam)\index (1).html"><span class="material-symbols-outlined">Login</span><span>Login</span></a></li>
-      <li><a href="C:\Users\moham\Downloads\IT Project\website\Books Page (menna)\Books.html"><span class="material-symbols-outlined">Book</span><span>Books Page</span></a></li>
-      <li><a href="C:\Users\moham\Downloads\IT Project\website\Lectures (mohamed)\Lectures.html"><span class="material-symbols-outlined">School</span><span>Lectures</span></a></li>
-      <li><a href="#"><span class="material-symbols-outlined">settings</span><span>Settings</span></a></li>
-      <li><a href="C:\Users\moham\Downloads\IT Project\website\Student's Information (menna)\StudentInfo.html"><span class="material-symbols-outlined">person</span><span>Account</span></a></li>
-      <li><a href="C:\Users\moham\Downloads\IT Project\website\Map Page (moayad)\Map.html"><span class="material-symbols-outlined">Map</span><span>Our Map</span></a></li>
-      <li><a href="#"><span class="material-symbols-outlined">logout</span><span>Logout</span></a></li>
-    </ul>
+  <ul class="menu-content">
+    <li><a href="https://savotageofficial.github.io/IT-website/"><span class="material-symbols-outlined">home</span><span>Home</span></a></li>
+    <li><a href="https://savotageofficial.github.io/IT-website/login%20(mariam)/login.html"><span class="material-symbols-outlined">Login</span><span>Login</span></a></li>
+    <li><a href="https://savotageofficial.github.io/IT-website/Books%20Page%20(menna)/University-textbooks-2-1.html"><span class="material-symbols-outlined">Book</span><span>Books Page</span></a></li>
+    <li><a href="https://savotageofficial.github.io/IT-website/Lectures%20(mohamed)/Lectures.html"><span class="material-symbols-outlined">School</span><span>Lectures</span></a></li>
+    <li><a href="#"><span class="material-symbols-outlined">settings</span><span>Settings</span></a></li>
+    <li><a onclick="hide()" id="btn"><span class="material-symbols-outlined">translate</span><span>translate page</span></a></li>
+    <li><a href="Student's Information (menna)/Profile-page-3 (1).html"><span class="material-symbols-outlined">person</span><span>Account</span></a></li>
+    <li><a href="https://savotageofficial.github.io/IT-website/Map%20Page%20(moayad)/Map.html"><span class="material-symbols-outlined">Map</span><span>Our Map</span></a></li>
+    <li><a href="#"><span class="material-symbols-outlined">logout</span><span>Logout</span></a></li>
+</ul>
 </div>
 
 <div class="soso">
     
-        <span  class="sara"><h1 style="color:black;">WELCOME TO UNIVERSITY HOUSING</h1></span>
-    
+        <span  class="sara"><h1 >WELCOME TO UNIVERSITY HOUSING</h1></span>
+       <img src="c:\Users\dell\Desktop\Front End\manar.jpg" >
     <h2>Discover The Best Student Housing Experience!</h2>
     <p>comfortable rooms,amazing community,unforgettable memories</p>
     <br>
@@ -51,7 +56,24 @@
     <li>single room</li>
     <li>shared suite</li>
    </ul>
+   <hr>
+   <h2 class="yosr">Avaliable rooms:</h2>
+   <div class="filters">
+     <button onclick="filterRooms('all')">All</button>
+     <button onclick="filterRooms('single')">Single room</button>
+     <button onclick="filterRooms('double')">Shared suite</button>
+   </div>
+   <div class="grid" id="roomGrid">
+     <div class="card single">single room-1500 LE</div>
+     <div class="card double">shared suite-1000LE</div>
+     <div class="card single">single room-1600LE</div>
+     <div class="card double"> shared suite-1100LE </div>
+   </div>
    
+     <h3>Watch Short Student Housing Tour:</h3>
+   <video width="1200" height="500" controls  muted autoplay loop playsinline>
+      <source src="c:\Users\dell\Desktop\Front End\BB_3e6062d0-7688-41cf-aaaf-f137fb5b0a85.mp4" type="video/mp4">
+    </video>
    <h2>How To Apply:</h2>
    <ul>
     <li>fill out the housing application form</li>
@@ -63,41 +85,195 @@
    <fieldset>
     
         <form class="mo">
-     <div>
-        <label for="test1">User Name</label>
-        <input id="test1" type="text" required>
+     <div class="div">
+        <label for="test1"></label>
+        <input id="test1" type="text" placeholder="User Name" required>
      </div>
-     <div>
-        <label for="test2">College</label>
-        <input id="test2" type="text" required>
+     <div class="div">
+        <label for="test1"></label>
+        <input id="test1" type="text" required placeholder="college">
      </div>
-     <div>
-        <label for="test3">Phone Number</label>
-        <input id="test3" type="number" required>
+     <div class="div">
+        <label for="test1"></label>
+        <input id="test1" type="number" placeholder="Phone Number">
      </div>
 
-     <div>
-        <label for="test4">Non Native Governorate</label>
-        <input id="test4" type="text" required>
+     <div class="div">
+        <label for="test1"></label>
+        <input id="test1" type="text" placeholder="Non Native Governorate" required>
      </div>
+     
      <label for="text1">male</label>
      <input id="text1" type="radio" name="gender">
+    
      <br>
-     <label for="text2">female</label>
-     <input id="tet2" type="radio" name="gender">
      
+     <label for="text2">female</label>
+     <input id="text2" type="radio" name="gender">
+   
      <br>
     choose room type:
     <label for="mama">single room</label>
-    <input id="mama" type="radio" name="gender">
+    <input id="mama" type="radio" name="room">
     <label for="baba">shared room</label>
-     <input id="baba" type="radio" name="gender">
+     <input id="baba" type="radio" name="room">
+     <br> 
      <br>
-   
+     <button class="hoss">submit</button>
+   </form>
 </fieldset>
 <br>
- <input class="hoss" type="submit" style="color: rgb(76, 0, 255);" >
-</form>
+
+</div>
+<script src="main.js"></script>
+
+ <br>
+ <footer style="background-color: rgb(204, 204, 255); padding: 20px;  font-family: Arial, sans-serif;">
+   <p > If you need help contact us at:</p>
+   <p style="margin: 5px 0;">
+     📧 <a href="mailto:nourh3651@gmail.com" style="color: #bb49bd; text-decoration: none;">nourh3651@gmail.com</a>
+    
+     
+   </p>
+ </footer>
+</div>
+<div id="ar" >
+  <div class="container">
+    <div class="header">
+      <div class="menu_icon"><h2><button onclick="toggleDarkMode()" class="dark" href="#"><span class="material-symbols-outlined" id="dark_mod"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q8 0 17 .5t23 1.5q-36 32-56 79t-20 99q0 90 63 153t153 63q52 0 99-18.5t79-51.5q1 12 1.5 19.5t.5 14.5q0 150-105 255T480-120Zm0-60q109 0 190-67.5T771-406q-25 11-53.67 16.5Q688.67-384 660-384q-114.69 0-195.34-80.66Q384-545.31 384-660q0-24 5-51.5t18-62.5q-98 27-162.5 109.5T180-480q0 125 87.5 212.5T480-180Zm-4-297Z"/></svg></span></button><span style="color: white;">الوضع الداكن</span>
+           </h2></div>
+      <div class="title">
+       <h1 class="moayad" > جامعة حلوان</h1>
+      </div>
+      <div class="logo">
+        <img src="Helwan.jpg" alt="university's logo" style="height: 70px; width: 70px;border-radius: 30px;">
+      </div>
+    </div>
+          </div>
+  <div class="menu">
+    <ul class="menu-content">
+      <li><a href="https://savotageofficial.github.io/IT-website/"><span class="material-symbols-outlined">home</span><span>الصفحة الرئيسية</span></a></li>
+      <li><a href="https://savotageofficial.github.io/IT-website/login%20(mariam)/login.html"><span class="material-symbols-outlined">Login</span><span>تسجيل الدخول</span></a></li>
+      <li><a href="https://savotageofficial.github.io/IT-website/Books%20Page%20(menna)/University-textbooks-2-1.html"><span class="material-symbols-outlined">Book</span><span>الكتب</span></a></li>
+      <li><a href="https://savotageofficial.github.io/IT-website/Lectures%20(mohamed)/Lectures.html"><span class="material-symbols-outlined">School</span><span>المحاضرات</span></a></li>
+      <li><a href="#"><span class="material-symbols-outlined">settings</span><span>الاعدادات</span></a></li>
+      <li><a onclick="hide()" id="btn"><span class="material-symbols-outlined">translate</span><span>الترجمة</span></a></li>
+      <li><a href="Student's Information (menna)/Profile-page-3 (1).html"><span class="material-symbols-outlined">person</span><span>الحساب</span></a></li>
+      <li><a href="https://savotageofficial.github.io/IT-website/Map%20Page%20(moayad)/Map.html"><span class="material-symbols-outlined">Map</span><span>الخريطة</span></a></li>
+      <li><a href="#"><span class="material-symbols-outlined">logout</span><span>تسجيل الخروج</span></a></li>
+  </ul>
 </div>
 
+<div class="soso">
+    
+        <span  class="sara"><h1 >مرحبا بكم فى السكن الجامعي</h1></span>
+       <img src="c:\Users\dell\Desktop\Front End\manar.jpg" >
+    <h2>استكشف التجربة الافضل للسكن الجامعي</h2>
+    <p>غرف مريحة، مجمع مذهل، ذكريات لا تُنسى</p>
+    <br>
+    <pre>في جامعتنا، نحن ملزمون بإن نخلق بيئة سليمة تساعد الطلاب على تحقيق إمكانياتهم بالكامل.لنكرم قيم مجتمعنا لذا نوفر سكن منفصل للطلاب الذكور والإناث</pre>
+  
+   <h2>معلومات حول السكن</h2>
+   <ul>
+    <li>امن وامان 24 ساعة باليوم</li>
+    <li>غرف مذاكرة وساحات للاسترخاء</li>
+    <li>الغرف مكتملة الاثاث</li>
+    <li>يتوافر انترنت عالى السرعة</li>
+   </ul>
+   <h2>انواع الغرف</h2>
+   <ul>
+    <li>غرفة مفردة</li>
+    <li>غرفة مزدوجة</li>
+   </ul>
+   <hr>
+   <h2 class="yosr">الغرف المتاحه:</h2>
+
+   <!-- Filter Buttons -->
+   <div class="filters">
+     <button onclick="filterRooms('all')">الكل</button>
+     <button onclick="filterRooms('single')">غرفة مفردة</button>
+     <button onclick="filterRooms('double')">غرفة مشتركة</button>
+   </div>
+ 
+   <!-- Grid -->
+   <div class="grid" id="roomGrid">
+     <div class="card single">غرفة مفرده-1500 جنيه</div>
+     <div class="card double">غرفة مزدوجة-1000جنيه</div>
+     <div class="card single">غرفة مفردة-1600جنيه</div>
+     <div class="card double"> غرفة مزدوجه-1100جنيه </div>
+   </div>
+   
+     <h3>جولة قصيرة بالسكن الجامعي:</h3>
+   <video width="1200" height="500" controls  muted autoplay loop playsinline>
+      <source src="c:\Users\dell\Desktop\Front End\BB_3e6062d0-7688-41cf-aaaf-f137fb5b0a85.mp4" type="video/mp4">
+   
+    </video>
+   
+   <h2>كيفية التقديم:</h2>
+   <ul>
+    <li>املا استمارة البيانات</li>
+    <li>ارفق الملفات المطلوبة</li>
+    <li>ادفع المبلغ المطلوب</li>
+    <li>انتظر بريد الكتروني بالقبول</li>
+   </ul>
+   <h2>للتقديم بالسكن الجامعي املا هذا</h2>
+   <fieldset>
+    
+        <form class="mo">
+     <div class="div">
+        <label for="test1"></label>
+        <input id="test1" type="text" placeholder="الرقم القومي" required>
+     </div>
+     <div class="div">
+        <label for="test1"></label>
+        <input id="test1" type="text" required placeholder="الكلية">
+     </div>
+     <div class="div">
+        <label for="test1"></label>
+        <input id="test1" type="number" placeholder="رقم الهاتف">
+     </div>
+
+     <div class="div">
+        <label for="test1"></label>
+        <input id="test1" type="text" placeholder="محافظة الاغتراب" required>
+     </div>
+     
+     <label for="text1">ذكر</label>
+     <input id="text1" type="radio" name="gender">
+    
+     <br>
+     
+     <label for="text2">انثي</label>
+     <input id="text2" type="radio" name="gender">
+   
+     <br>
+    اختر نوع الغرفة:
+    <label for="mama">غرفة مفردة</label>
+    <input id="mama" type="radio" name="room">
+    <div>
+      <label for="baba">غرفة مزدوجة</label>
+     <input id="baba" type="radio" name="room">
+    </div>
+    
+     <br> 
+     <br>
+     <button class="hoss">ارسال</button>
+   </form>
+</fieldset>
+<br>
+
+</div>
+<script src="main.js"></script>
+
+ <br>
+ <footer style="background-color: rgb(204, 204, 255); padding: 20px;  font-family: Arial, sans-serif;">
+   <p > اذا تحتاج لمساعده تواصل معنا علي:</p>
+   <p style="margin: 5px 0;">
+     📧 <a href="mailto:nourh3651@gmail.com" style="color: #bb49bd; text-decoration: none;">nourh3651@gmail.com</a>
+    
+     
+   </p>
+ </footer>
+</div>
 </body>
+</html>

@@ -1,29 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
-.form_div{
+#dim.form_div{
 
 
-    height: 540px ;
+    height: 800px ;
     font-weight: bold;
-    transform: translateX(200px);
+    transform: translateX(300px);
      display: inline-block;
-     background-color: rgba(25, 24, 24, 0.216); 
-     width: 800px;
+     background-color: rgba(165, 165, 165, 0.912);
+     width: 850px;
      font-family: Arial, Helvetica, sans-serif;
-     margin-top: 90px;
+     margin-top: 10px;
     
+    
+}
+.gridf{
+    display: grid;
+    grid-template-columns: auto;
+   /* grid-template-rows: 70px 70px 70px 70px 70px 20px auto;*/
+   row-gap: 2px;
 }
 .forms2{
 
-      transform: translateX(200px);
-     height: 300PX;
-     width: 500PX;
+      transform: translateX(100px);
+     height: 100PX;
+     width: 100PX;
     
 }
 .input_2{
 
     margin-left:100px;
-    vertical-align: top;
+    vertical-align: text-bottom;
 }
 .internal_header{
      border-style: none;
@@ -38,30 +45,48 @@
      padding-top: 5px; 
 }
 
+
 .butt{
-    transform: translateY(40px);
+    transform: translateY(10px);
     color: white;
     border-style:solid;
      background-color: rgb(2, 2, 205);
      border-radius: 40px;
-     height: 30px;
+     height: 50px;
      width: 90px;
-     margin-left: 90px;
+     margin-left:0px;
      cursor: pointer;
 
 }
 .inp{
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+    margin: 10px;
+  
+}
+.inp:focus{
 
-    width: 200px;
-    height: 25px;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123,255,0.25);
 }
 .image_div{
    
       transform: translateY(150px);
-      border-style: dashed;
+      border-style: solid;
       display: inline-block;
       vertical-align: top;
-      margin-left: 320px;
+      margin-left: 120px;
+      object-fit: cover;
+      z-index: -1;
+      position: relative;
+      left: 140px;
+      bottom: 50px;
+      
+
 
 
 }
@@ -138,24 +163,24 @@ a {
    text-align:center;
    justify-content:space-between;
    display:flex;
-   padding: 25px;
-   width:97%;
+   padding: 15px;
+   width:98%;
    border-bottom-left-radius:50px;
-   z-index: 1;
+  z-index: 1;
    border-bottom-right-radius:50px;}
 body{
 margin:0px;
 }
 .title{
     text-align: center;
-    font-size: xx-large;
+    font-size: xx-large;
 
 }
 .header_top{
     position: static;
     transform: translateY(100px);
-    margin-left: 150px;
-    margin-bottom: 40px;
+    margin-left: 200px;
+    margin-top: 60px;
     border-style: solid;
     color: white;
      background-color: #01014B;
@@ -163,8 +188,79 @@ margin:0px;
      font-weight: normal;
      width: 250px;
       height: 30px;
-      border-top-right-radius:40px ;
-      border-bottom-right-radius: 40px;
+     /* border-top-right-radius:40px ;
+      border-bottom-right-radius: 40px;*/
+        border-color: #121212;
       z-index: -2;
-      text-align: center;}
-      
+      text-align: left;
+      text-align:center;
+       position: relative;
+       left:30px;
+    }
+
+      #dim.form_div2{
+        
+        height: 800px ;
+    font-weight: bold;
+    transform: translateX(300px);
+     display: inline-block;
+     background-color: rgba(165, 165, 165, 0.912);
+     width: 850px;
+     font-family: Arial, Helvetica, sans-serif;
+     margin-top: 60px;
+    
+        
+       }
+       body.dark-mode{
+
+        background-color: #121212;
+        color:white;
+       }
+       #ar{
+        display: none;
+    }
+    #en{
+        display: none;
+    }
+    #ar.hiddenar{
+        display: block;
+        text-align: right;
+    }
+    #en.hiddenen{
+        display: block;
+    }
+    #btn{
+        color: black;
+        transform: translateY(120px);
+    }
+  
+   
+#dim.form_div1{
+
+
+    height: 800px ;
+    font-weight: bold;
+    transform: translateX(350px);
+     display: inline-block;
+     background-color: rgba(165, 165, 165, 0.912);
+     width: 850px;
+     font-family: Arial, Helvetica, sans-serif;
+     margin-top: 10px;
+    position: relative;
+    right: 50px;
+    
+}
+.image_div1{
+   
+    transform: translateX(750px);
+    border-style: solid;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 120px;
+    object-fit: cover;
+    z-index: -1;
+    position: relative;
+    top: 200px;
+
+}
+

@@ -1,75 +1,78 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TEST</title>
-        <link rel="stylesheet" href="results.css">
+        <title>Courses</title>
+        <link rel="stylesheet" href="index.css">
 
-      
+       
     </head>
     <body>
-        
-
-        <div class="menu">
-            <ul class="menu-content">
-              <li><a href="C:\Users\moham\Downloads\IT Project\website\home\Home.html"><span class="material-symbols-outlined">home</span><span>Home</span></a></li>
-              <li><a href="C:\Users\moham\Downloads\IT Project\website\login (mariam)\index (1).html"><span class="material-symbols-outlined">Login</span><span>Login</span></a></li>
-              <li><a href="C:\Users\moham\Downloads\IT Project\website\Books Page (menna)\Books.html"><span class="material-symbols-outlined">Book</span><span>Books Page</span></a></li>
-              <li><a href="C:\Users\moham\Downloads\IT Project\website\Lectures (mohamed)\Lectures.html"><span class="material-symbols-outlined">School</span><span>Lectures</span></a></li>
-              <li><a href="#"><span class="material-symbols-outlined">settings</span><span>Settings</span></a></li>
-              <li><a href="C:\Users\moham\Downloads\IT Project\website\Student's Information (menna)\StudentInfo.html"><span class="material-symbols-outlined">person</span><span>Account</span></a></li>
-              <li><a href="C:\Users\moham\Downloads\IT Project\website\Map Page (moayad)\Map.html"><span class="material-symbols-outlined">Map</span><span>Our Map</span></a></li>
-              <li><a href="#"><span class="material-symbols-outlined">logout</span><span>Logout</span></a></li>
-            </ul>
+     <div id="en" class="hiddenen">
+      <div class="container">
+        <div class="header">
+          <div class="menu_icon"><h2><button onclick="toggleDarkMode()" class="dark" href="#"><span class="material-symbols-outlined" id="dark_mod"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q8 0 17 .5t23 1.5q-36 32-56 79t-20 99q0 90 63 153t153 63q52 0 99-18.5t79-51.5q1 12 1.5 19.5t.5 14.5q0 150-105 255T480-120Zm0-60q109 0 190-67.5T771-406q-25 11-53.67 16.5Q688.67-384 660-384q-114.69 0-195.34-80.66Q384-545.31 384-660q0-24 5-51.5t18-62.5q-98 27-162.5 109.5T180-480q0 125 87.5 212.5T480-180Zm-4-297Z"/></svg></span></button><span style="color: white;">Dark mode</span>
+               </h2></div>
+          <div class="title">
+            <h2> Helwan university</h2>
+          </div>
+          <div class="logo">
+            <img src="Helwan.jpg" alt="university's logo" style="height: 70px; width: 70px;border-radius: 30px;">
+          </div>
+        </div>
           </div>
-    <div class="container">
-                <div class="header">
-                 <div class="menu_icon"><h2><a class="dark" href="#"><span class="material-symbols-outlined">dark_mode</span><span>Dark Mode</span></a></h2></div>
 
-                  <div class="title">
-                    <h2> Helwan university</h2>
-                  </div>
-                  <div class="logo">
-                    <img src="Helwan.jpg" alt="university's logo" style="height: 70px; width: 70px;border-radius: 30px;">
-                  </div>
-                </div>
-            </div>
- b  <h2 style="color: black;" >Courses Result</h2>
- <img src="طالب جامعي.jpeg" width="1800" height="500">
-     
-    <h4 style="color: rgb(11, 11, 11);"><b>Student Information:</b></h4>
-       <form class="form">
+<div class="menu">
+  <ul class="menu-content">
+      <li><a href="https://savotageofficial.github.io/IT-website/"><span class="material-symbols-outlined">home</span><span>Home</span></a></li>
+      <li><a href="https://savotageofficial.github.io/IT-website/login%20(mariam)/login.html"><span class="material-symbols-outlined">Login</span><span>Login</span></a></li>
+      <li><a href="https://savotageofficial.github.io/IT-website/Books%20Page%20(menna)/University-textbooks-2-1.html"><span class="material-symbols-outlined">Book</span><span>Books Page</span></a></li>
+      <li><a href="https://savotageofficial.github.io/IT-website/Lectures%20(mohamed)/Lectures.html"><span class="material-symbols-outlined">School</span><span>Lectures</span></a></li>
+      <li><a href="#"><span class="material-symbols-outlined">settings</span><span>Settings</span></a></li>
+      <li><a onclick="hide()" id="btn"><span class="material-symbols-outlined">translate</span><span>translate page</span></a></li>
+      <li><a href="Student's Information (menna)/Profile-page-3 (1).html"><span class="material-symbols-outlined">person</span><span>Account</span></a></li>
+      <li><a href="https://savotageofficial.github.io/IT-website/Map%20Page%20(moayad)/Map.html"><span class="material-symbols-outlined">Map</span><span>Our Map</span></a></li>
+      <li><a href="#"><span class="material-symbols-outlined">logout</span><span>Logout</span></a></li>
+  </ul>
+</div>
+                 <h2 >Course Results</h2>
+ <div class="image"><img src="c:\Users\dell\Pictures\طالب جامعي.jpg" width="1300" height="500"></div>
+             <h4 ><b>fill in your details to check grades!</b></h4>
+       <div class="allform">
+    <form class="form">
      <fieldset>
     <div>
    <label for="text1">USER NAME:</label>
-   <input id="text1" type="text">
-  
+   <input id="text1" type="text" required >
     </div>
     <br>
      <div>
         <label for="text2">STUDENT ID:</label>
-        <input id="text2" type="number">
+        <input id="text2" type="number" required >
      </div>
      <br>
     <div>
      <label for="text3">COLLEGE:</label>
-     <input id="text3" name="college" list="faculties">
+     <input id="text3" name="college" list="faculties" required >
         <datalist id="faculties">
         <option>engineering</option>
         <option>medicine</option>
         <option>computer science</option>
+        <option>pharmacy</option>
+        <option>science</option>
        </datalist>
+       <button class="manar">submit</button>
     </div>
-     </fieldset>
+  </fieldset>
        </form>
+      </div>
        <br>
-       <input class="dod" type="submit" style="color: blue;">
       <br>
-      <table class="table" border="1">
+      <table class="table" border="4px" >
        <tr>
         <td>course</td> 
         <td>score</td>
         <td>grade</td>
-        <td>status (pass\fall)</td>
+        <td> status (pass\fall)</td>
         <td>credit hour</td>
        </tr>
           <br>                          
@@ -96,21 +99,156 @@
             <td> </td>
             <td></td>
             </tr>
-
-            <tr>
+             <tr>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              </tr>
+              <tr>
                 <td> </td>
                 <td> </td>
                 <td> </td>
                 <td> </td>
                 <td> </td>
                 </tr>
+                <tr>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  </tr>
       </table>
       <br>
-     <input class="manar" type="submit" value="download result as pdf" style="color: blue">
+     <button class="manar right memo">download result as pdf</button>     
+     <button class="manar right">print result</button>
+    </div>
+    <div id="ar" >
+      
+      <div >
+
+        <div class="menu">
+          <ul class="menu-content">
+            <li><a href="https://savotageofficial.github.io/IT-website/"><span class="material-symbols-outlined">home</span><span>الصفحة الرئيسية</span></a></li>
+            <li><a href="https://savotageofficial.github.io/IT-website/login%20(mariam)/login.html"><span class="material-symbols-outlined">Login</span><span>تسجيل الدخول</span></a></li>
+            <li><a href="https://savotageofficial.github.io/IT-website/Books%20Page%20(menna)/University-textbooks-2-1.html"><span class="material-symbols-outlined">Book</span><span>الكتب</span></a></li>
+            <li><a href="https://savotageofficial.github.io/IT-website/Lectures%20(mohamed)/Lectures.html"><span class="material-symbols-outlined">School</span><span>المحاضرات</span></a></li>
+            <li><a href="#"><span class="material-symbols-outlined">settings</span><span>الاعدادات</span></a></li>
+            <li><a onclick="hide()" id="btn"><span class="material-symbols-outlined">translate</span><span>الترجمة</span></a></li>
+            <li><a href="Student's Information (menna)/Profile-page-3 (1).html"><span class="material-symbols-outlined">person</span><span>الحساب</span></a></li>
+            <li><a href="https://savotageofficial.github.io/IT-website/Map%20Page%20(moayad)/Map.html"><span class="material-symbols-outlined">Map</span><span>الخريطة</span></a></li>
+            <li><a href="#"><span class="material-symbols-outlined">logout</span><span>تسجيل الخروج</span></a></li>
+        </ul>
+      </div>
+    <div class="container">
+                <div class="header">
+   <div class="menu_icon"><h2><button onclick="toggleDarkMode()" class="dark" href="#"><span class="material-symbols-outlined" id="dark_mod"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q8 0 17 .5t23 1.5q-36 32-56 79t-20 99q0 90 63 153t153 63q52 0 99-18.5t79-51.5q1 12 1.5 19.5t.5 14.5q0 150-105 255T480-120Zm0-60q109 0 190-67.5T771-406q-25 11-53.67 16.5Q688.67-384 660-384q-114.69 0-195.34-80.66Q384-545.31 384-660q0-24 5-51.5t18-62.5q-98 27-162.5 109.5T180-480q0 125 87.5 212.5T480-180Zm-4-297Z"/></svg></span ></button><span style="color: white;">الوضع الداكن</span>
+                       </h2></div>
+                  <div class="title">
+                    <h2> جامعة حلوان</h2>
+                  </div>
+                  <div class="logo">
+                    <img src="Helwan.jpg" alt="university's logo" style="height: 70px; width: 70px;border-radius: 30px;">
+                  </div>
+                </div>
+            </div>
+                 <h2> نتائج المواد الدراسية</h2>
+ <div class="image"><img src="c:\Users\dell\Pictures\طالب جامعي.jpg" width="1300" height="500"></div>
+             <h4 ><b>ادخل البيانات التالية لعرض النتيجة</b></h4>
+    <div class="allform">
+    <form class="form">
+     <fieldset>
+    <div>
+   <label for="text1">الرقم القومي:</label>
+   <input id="text1" type="text" required >
+    </div>
+    <br>
+     <div>
+        <label for="text2">كود الطالب:</label>
+        <input id="text2" type="number" required >
+     </div>
+     <br>
+    <div>
+     <label for="text3">الكلية:</label>
+     <input id="text3" name="الكليه" list="الكليات" required >
+        <datalist id="الكليات">
+        <option>كلية الهندسه</option>
+        <option>كلية الطب البشري</option>
+        <option>كلية الحاسبات والذكاء الاصطناعي</option>
+        <option>كلية صيدله</option>
+        <option>كليه العلوم</option>
+       </datalist>
+       <button class="manar">تسجيل</button>
+    </div>
+  </fieldset>
+       </form>
+  </div>
+
+       <br>
+ 
+       
       <br>
-     <input class="manar" type="submit" value="print result" style="color: blue;">
+      <table class="table" border="4" >
+       <tr>
+        <td>الماده</td> 
+        <td>الدرجه</td>
+        <td>التقدير</td>
+        <td>الحاله (ناجح/راسب)</td>
+        <td>الساعات المعتمده</td>
+       </tr>
+          <br>                          
+      <tr>
+      <td></td>
+      <td></td>
+      <td> </td>
+      <td> </td>
+      <td></td>
+      </tr>
+     
+      <tr>
+        <td></td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td></td>
+        </tr>
 
-
-
-       </body> 
+        <tr>
+            <td></td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td></td>
+            </tr>
+             <tr>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              <td> </td>
+              </tr>
+              <tr>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                <td> </td>
+                </tr>
+                <tr>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  </tr>
+      </table>
+      <br>
+     <button class="manar right memo">تحميل الملف</button>     
+     <button class="manar right">اطبع النتيجة</button>
+    </div>
+    </div>
+    </body> 
+    <script src="main2.js"></script>
      </html>

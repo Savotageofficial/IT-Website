@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+span{
+    text-align: center;
+    display: block;
+}
+.moayad{
+    color: white;
+    margin-left: 50px;
+}
+
+h1{
+margin-left: 500px;    
+    color: rgb(8, 0, 0);
+}
+b{
+    margin-top: 100px;
+}
+
+
+img{
+   height: 500px;
+}
+
+
+
+.header{
+    position: fixed;
+    top: 0%;
+   background-color:#01014B;
+       background-image: linear-gradient(#01014B, #000);
+   color:white;
+   font-style:italic;
+   font-family:arial;
+   font-weight:bold;
+   align-items:center;
+   text-align:center;
+   justify-content:space-between;
+   display:flex;
+   padding: 25px;
+   height: 70px;
+   width:97%;
+   border-bottom-left-radius:50px;
+   margin-left: -160px;
+   border-bottom-right-radius:50px;}
+body{
+margin:0px;
+transition: 0.3s;
+}
+.title{
+    text-align: center;
+    font-size: xx-large;
+
+}
+.soso{
+    margin-left: 150px;
+    margin-bottom: -1000;
+
+}
+.mo{
+    margin-left: 20px;
+   font-size: 20px;
+   color: black;
+}
+.div{
+    text-align: center;
+    display: block;
+}
+#test1{
+    width: 900px;
+  height: 30px;
+  font-size: 16px;
+  padding: 5px;
+  border: solid blue 2px ;
+  border-radius:25px;
+  margin: 2px;
+}
+   
+   fieldset{
+    border-radius : 25px;
+    border: solid blue 2px ;
+    width: 900px;
+   }
+  .sara{
+    margin-top: 150px;
+    margin-left: -500px;
+  }
+
+.menu::-webkit-scrollbar {
+    display: none;
+}
+
+.menu {
+    position:fixed;
+    top: 130px;
+    left: 0;
+    width: 85px;
+    height: 80%;
+    transition: .3s;
+    scrollbar-width: none;
+    overflow: hidden scroll;
+    background: #ffffff12;
+    -ms-overflow-style: none;
+    padding: 20px 30px 20px 0;
+    backdrop-filter: blur(5px);
+    box-shadow: 8px 0px 9px 0px #00000014;
+    border-radius: 30px;
+}
+
+.menu:hover {
+    width: 260px;
+}
+
+.menu:hover li span:nth-child(2) {
+    display: block;
+}
+
+.menu-content li {
+    list-style: none;
+    border-radius: 0px 50px 50px 0;
+    transition: .3s;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.menu-content li:hover {
+    background: #01014B;
+}
+
+.menu-content li span:nth-child(2) {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(213, 213, 213);
+    display: flex;
+    align-items: center;
+    font-family: 'calibri';
+}
+.material-symbols-outlined {
+    padding: 10px;
+    font-size: 25px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: #01014B;
+}
+ul{
+    font-weight: bold;
+    font-size: 20px;
+    list-style-type: none;
+}   
+p{
+    font-weight: bold;
+    font-size: 20px;
+}
+pre{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2{
+    color: rgb(136, 59, 31);
+}
+h3{
+    font-size: 30px;
+    color: rgb(112, 8, 8);
+}
+.hoss{
+     border-radius: 25px; 
+     background-color:gray;
+     height: 30px;
+     width: 400px;
+     cursor: pointer;
+     box-shadow: 0 0 20px blue;
+     margin-left: 250px;
+}
+.hoss:active {
+   background-color: blue;
+}
+body.dark-mode{
+    background-color: #121212;
+    color: white;
+    transition: 0.3s;
+}
+.dark{
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    cursor: pointer;
+}
+body.dark-mode h1{
+    color: white
+}
+body.dark-mode ul{
+    color: white;
+}
+body.dark-mode p{
+    color: white;
+}
+body.dark-mode pre{
+    color: white;
+}
+body.dark-mode form{
+    color: white;
+}
+body.dark-mode h2{
+    color:bisque;
+}
+body{
+    margin-left: 160px;
+}
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  .filters {
+    margin-bottom: 20px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  .card {
+    border: 1px double #000000;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #db3030;
+  }
+  .card.single { background-color: rgb(161, 161, 161) }
+  .card.double { background-color: rgb(214, 138, 45) }
+  .yosr{
+    color: rgb(7, 62, 44)
+  }
+
+  #ar{
+    display: none;
+    direction: rtl;
+  text-align: right;
+}
+#ar .material-symbols-outlined{
+    margin-right: 200px;
+} 
+#ar .menu-content{
+    margin-right:-250px;
+}
+#ar .title{
+   margin-left: 260px;
+}
+#en{
+    display: none;
+}
+#ar.hiddenar{
+    display: block;
+}
+#en.hiddenen{
+    display: block;
+}
+#btn{
+    cursor: pointer;
+}

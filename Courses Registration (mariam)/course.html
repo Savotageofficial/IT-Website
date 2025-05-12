@@ -1,93 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width", initial-scale="1.0"/>
-        <title>Helwan University</title>
-        <link rel="stylesheet" href="course.css"> 
-    </head>
-    <body>
-        <div class="bg">
-            <div class="head">
-                <ul class="lists">
-                    <li>Courses</li>
-                    <li>Credit Hour</li>
-                    <li>Number</li>
-                    <li>Instructor</li>
-                    <li>Time</li>
-                </ul>
-            </div>
-        <div class="lines">
-            <div class="line1">
-                <ul class="lists">
-                    <li class="intro">Intro to psychology</li>
-                    <li>3</li>
-                    <li>PSYCH101</li>
-                    <li>Dr.selim</li>
-                    <li>8:30am</li>
-                </ul>
-
-            </div>
-            <div class="line2">
-                <ul class="lists">
-                   <li> Data structure</li>
-                   <li>3</li>
-                   <li>CSCI 202</li>
-                   <li>Ali ahmed</li>
-                   <li>13:00am</li>
-                </ul>
-            </div>
-            <div class="line3">
-                <ul class="lists">
-                     <li>World history</li>
-                     <li>2</li>
-                     <li>HTST 210</li>
-                     <li>Dr.william</li>
-                     <li>10:00am</li>
-                </ul>
-            </div>
-            <div class="line4">
-                <ul class="lists">
-                    <li>Linear Algebra</li>
-                    <li>3</li>
-                    <li>MATH 301</li>
-                    <li>Amira omar</li>
-                    <li>12:00am</li>
-                </ul>
-
-            </div>
-            <div class="line5">
-                <ul class="lists">
-                    <li>Oraganic Chemistry</li>
-                    <li>3</li>
-                    <li>CHEM 250</li>
-                    <li>Dr.Hossam alaa</li>
-                    <li>8:30am</li>
-                </ul>
-            </div>
-            <div class="line6">
-                <ul class="lists">
-                     <li>Geomatics</li>
-                     <li>3</li>
-                     <li>GEO 102</li>
-                     <li>Dr.Osama</li>
-                     <li>10:30am</li>
-                </ul>
-            </div>
-            <div class="line7">
-                <ul class="lists">
-                    <li>English</li>
-                    <li>2</li>
-                    <li>ENG 301</li>
-                    <li>Dr.salma swelim</li>
-                    <li>12:30am</li>
-                </ul>
-            </div>
-        </div>
-        </div> 
+<head>
+  <meta charset="UTF-8">
+  <title>Helwan University</title>
+  <link rel="stylesheet" href="newone.css"> 
+</head>
+<body>
+<div class="hiddenen" id="en">   
         <div class="container">
         <div class="header">
-            <div class="menu_icon"><h2><a class="dark" href="#"><span class="material-symbols-outlined">dark_mode</span><span>Dark Mode</span></a></h2></div>
+            <div class="menu_icon">
+                <h2>
+                    <button onclick="dark_mode()" class="dark" href="#">
+                <span class="material-symbols-outlined">dark_mode</span>
+                <span>Dark Mode</span>
+                    </button>
+                </h2>
+            </div>
             <div class="title">
             Helwan university
           </div>
@@ -95,42 +24,495 @@
             <img src="Helwan Logo.jpeg" alt="university's logo" style="height: 70px; width: 70px;border-radius: 30px;">
           </div>
         </div>
-    <div class="menu">
-        <ul class="menu-content">
-            <li><a href="C:\Users\moham\Downloads\IT Project\website\home\Home.html"><span class="material-symbols-outlined">home</span><span>Home</span></a></li>
+
+
+                <div class="menu">
+                    <ul class="menu-content">
+                    <li><a href="C:\Users\moham\Downloads\IT Project\website\home\Home.html"><span class="material-symbols-outlined">home</span><span>Home</span></a></li>
                     <li><a href="C:\Users\moham\Downloads\IT Project\website\login (mariam)\index (1).html"><span class="material-symbols-outlined">Login</span><span>Login</span></a></li>
                     <li><a href="C:\Users\moham\Downloads\IT Project\website\Books Page (menna)\Books.html"><span class="material-symbols-outlined">Book</span><span>Books Page</span></a></li>
                     <li><a href="C:\Users\moham\Downloads\IT Project\website\Lectures (mohamed)\Lectures.html"><span class="material-symbols-outlined">School</span><span>Lectures</span></a></li>
-                    <li><a href="#"><span class="material-symbols-outlined">settings</span><span>Settings</span></a></li>
+                    <li><a onclick="hide()" id="btn"><span class="material-symbols-outlined">translate</span><span>translate page</span></li>
                     <li><a href="C:\Users\moham\Downloads\IT Project\website\Student's Information (menna)\StudentInfo.html"><span class="material-symbols-outlined">person</span><span>Account</span></a></li>
                     <li><a href="C:\Users\moham\Downloads\IT Project\website\Map Page (moayad)\Map.html"><span class="material-symbols-outlined">Map</span><span>Our Map</span></a></li>
                     <li><a href="#"><span class="material-symbols-outlined">logout</span><span>Logout</span></a></li>
-        </ul>
-    </div>
-    <div class="box">
-        <div class="all-button1">
-        <ul style="list-style-type: none;">
-           <li><button class="button">Math-2</button></li>
-           <li><button class="button">Intro to CS</button></li>
-           <li><button class="button">English-2</button></li>
-           <li><button class="button">IT</button></li>
-           <li><button class="button">Logic desgin</button></li>
-           <li><button class="button">Discrete</button></li>
-           <li><button class="button save">Save</button></li>
-        </ul>
+                    </ul>
+                </div>
+      
+                <!-- <div class="menu">
+                            <ul class="menu-content">
+                                <li><a href="https://savotageofficial.github.io/IT-website/"><span class="material-symbols-outlined">home</span><span>Home</span></a></li>
+                                <li><a href="https://savotageofficial.github.io/IT-website/login%20(mariam)/login.html"><span class="material-symbols-outlined">Login</span><span>Login</span></a></li>
+                                <li><a href="https://savotageofficial.github.io/IT-website/Books%20Page%20(menna)/University-textbooks-2-1.html"><span class="material-symbols-outlined">Book</span><span>Books Page</span></a></li>
+                                <li><a href="https://savotageofficial.github.io/IT-website/Lectures%20(mohamed)/Lectures.html"><span class="material-symbols-outlined">School</span><span>Lectures</span></a></li>
+                                <li><a href="#"><span class="material-symbols-outlined">settings</span><span>Settings</span></a></li>
+                                <li><a href="Student's Information (menna)/Profile-page-3 (1).html"><span class="material-symbols-outlined">person</span><span>Account</span></a></li>
+                                <li><a href="https://savotageofficial.github.io/IT-website/Map%20Page%20(moayad)/Map.html"><span class="material-symbols-outlined">Map</span><span>Our Map</span></a></li>
+                                <li><a href="#"><span class="material-symbols-outlined">logout</span><span>Logout</span></a></li>
+                            </ul>
+                </div> -->
+        <div class="cont">
+            <div class="search-box" onclick="showlist()" id="search-bar">
+                <i class="fa-solid fa-magnifying-glass "></i>
+                <input type="text" placeholder="Search" class="search" id="search">
+            </div>
+            <div class="list-search" id="list-search">
+                <ul id="list">
+                    <li>software engneering</li>
+                    <li>Information System</li>
+                    <li>Discrete</li>
+                    <li>Database</li>
+                    <li>Entrepreneurship</li>
+                    <li>Operating System</li>
+                    <li>Machine Learning</li>
+                    <li>English-1</li>
+                    <li>Web Programing</li>
+                    <li>Computer Networks</li>
+                    <li>Communication Skills</li>
+                    <li>Data Structure</li>
+                </ul>
+            </div>
         </div>
-        <div class="all-button2">
-            <ul style="list-style-type: none;">
-                <li><button class="button">Remove</button></li>
-                <li><button class="button">Remove</button></li>
-                <li><button class="button">Remove</button></li>
-                <li><button class="button">Remove</button></li>
-                <li><button class="button">Remove</button></li>
-                <li><button class="button">Remove</button></li>
-               <li> <button class="button cancel">Cancel</button></li>
-            </ul>
+    <div class="grid" id="List">
+        
+        
+                <div class="subject1 shadow" id="mater.1-11" data-subject="software engneering">
+                    <div class="text">
+                        <h2>Course:  </h2>
+                        <h2 >software engneering</h2>
+                        <h2>credit hours: 3</h2>
+                        <input type="checkbox" class="choose">
+                    </div>
+                </div>
+                
+                <div class="subject2 shadow" id="mater.1-8" data-subject="Information System">
+                    <div class="text">
+                        <h2>Course: </h2>
+                        <h2 >Information System</h2>
+                        <h2>credit hours: 3</h2>
+                        <input type="checkbox" class="choose">
+                    </div>
+                </div>
+               
+                <div class="subject3 shadow" id="mater.1-5" data-subject="Discrete">
+                    <div class="text">
+                        <h2>Course: </h2>
+                        <h2 >Discrete</h2>
+                        <h2>credit hours: 3</h2>
+                        <input type="checkbox" class="choose">
+                    </div>
+                </div>
+               
+                <div class="subject4 shadow" id="mater.1-3" data-subject="Database">
+                    <div class="text">
+                        <h2>Course:</h2>
+                        <h2 >Database</h2>
+                        <h2>credit hours: 3</h2>
+                        <input type="checkbox" class="choose">
+                    </div>
+                </div>
+           
+                <div class="subject5 shadow" id="mater.1-7" data-subject="Entrepreneurship">
+                    <div class="text">
+                        <h2>Course:</h2>
+                        <h2 >Entrepreneurship</h2>
+                        <h2>credit hours: 2</h2>
+                        <input type="checkbox" class="choose">
+                    </div>
+                </div>
+              
+                <div class="subject6 shadow" id="mater.1-10" data-subject="Operating System">
+                    <div class="text">
+                        <h2>Course: </h2>
+                        <h2 >Operating System</h2>
+                        <h2>credit hours: 3</h2>
+                        <input type="checkbox" class="choose">
+                    </div>
+                </div>
+                
+                <div class="subject7 shadow" id="mater.1-9" data-subject="Machine Learning">
+                    <div class="text">
+                        <h2>Course: </h2>
+                        <h2>Machine Learning</h2>
+                        <h2>credit hours: 3</h2>
+                        <input type="checkbox" class="choose">
+                    </div>
+                </div>
+               
+                <div class="subject8 shadow" id="mater.1-6" data-subject="English-1">
+                    <div class="text">
+                        <h2>Course:</h2>
+                        <h2 >English-1</h2>
+                        <h2>credit hours: 2</h2>
+                        <input type="checkbox" class="choose">
+                    </div>
+                </div>
+                
+                <div class="subject9 shadow" id="mater.1-12" data-subject="Web Programing">
+                    <div class="text">
+                        <h2>Course: </h2>
+                        <h2 >Web Programing</h2>
+                        <h2>credit hours: 3</h2>
+                        <input type="checkbox" class="choose">
+                    </div>
+                </div>
+                
+                <div class="subject10 shadow" id="mater.1-2" data-subject="Computer Networks">
+                    <div class="text">
+                        <h2>Course: </h2>
+                        <h2 >Computer Networks</h2>
+                        <h2>credit hours: 3</h2>
+                        <input type="checkbox" class="choose">
+                    </div>
+                </div>
+                
+                <div class="subject11 shadow" id="mater.1-1" data-subject="Communication Skills">
+                    <div class="text">
+                        <h2>Course:</h2>
+                        <h2>Communication Skills</h2>
+                        <h2>credit hours: 2</h2>
+                        <input type="checkbox" class="choose">
+                    </div>
+                </div>
+
+                <div class="subject12 shadow" id="mater.1-4" data-subject="Data Structure">
+                    <div class="text" >
+                        <h2>Course:</h2>
+                        <h2 ><a href="#">Data Structure </a></h2>
+                        <h2>credit hours: 3</h2>
+                        <input type="checkbox" class="choose">
+                    </div>
+                </div>
+                 
+   </div> 
+   <button class="save"><strong>Save</strong></button>
+    <div id="Button"><a onclick="sortdiv();">SORT</a></div>
+  </div>
+
+
+
+</div>
+ <div id="ar">
+    <div class="container">
+        <div class="header">
+            <div class="menu_icon">
+                <h2>
+                    <button onclick="dark_mode()" class="dark" href="#">
+                <span class="material-symbols-outlined">dark_mode</span>
+                <span>Dark Mode</span>
+                    </button>
+                </h2>
+            </div>
+            <div class="title">
+            جامعه حلوان
+          </div>
+          <div class="logo">
+            <img src="Helwan Logo.jpeg" alt="university's logo" style="height: 70px; width: 70px;border-radius: 30px;">
+          </div>
         </div>
-    </div>
-    
-    </body>
+            <div class="menu">
+                <ul class="menu-content">
+                <li><a href="C:\Users\moham\Downloads\IT Project\website\home\Home.html"><span class="material-symbols-outlined">home</span><span>home</span></a></li>
+                <li><a href="C:\Users\moham\Downloads\IT Project\website\login (mariam)\index (1).html"><span class="material-symbols-outlined">login</span><span>login</span></a></li>
+                <li><a href="C:\Users\moham\Downloads\IT Project\website\Books Page (menna)\Books.html"><span class="material-symbols-outlined">book</span><span>Books Page</span></a></li>
+                <li><a href="C:\Users\moham\Downloads\IT Project\website\Lectures (mohamed)\Lectures.html"><span class="material-symbols-outlined">School</span><span>Lectures</span></a></li>
+                <li><a onclick="hide()" id="btn"><span class="material-symbols-outlined">translate</span><span>translate page</span></li>
+                <li><a href="C:\Users\moham\Downloads\IT Project\website\Student's Information (menna)\StudentInfo.html"><span class="material-symbols-outlined">person</span><span>Account</span></a></li>
+                <li><a href="C:\Users\moham\Downloads\IT Project\website\Map Page (moayad)\Map.html"><span class="material-symbols-outlined">Map</span><span>Our Map</span></a></li>
+                <li><a href="#"><span class="material-symbols-outlined">logout</span><span>Logout</span></a></li>
+                </ul>
+            </div>
+        <div class="cont">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass "></i>
+                    <input type="text" placeholder="Search" class="search" id="search">
+                    <!-- <div class="list-search" id="list-search">
+                <ul id="list">
+                    <li>هندسه برمجيات</li>
+                    <li>نظم معلومات</li>
+                    <li>الرياضيات المتقطعه</li>
+                    <li>قواعد البيانات</li>
+                    <li>رياده الاعمال</li>
+                    <li>نظم التشغيل</li>
+                    <li>تعلم الاله</li>
+                    <li>انجليزى-1</li>
+                    <li>برمجه الويب</li>
+                    <li>شبكات الحاسب</li>
+                    <li>مهارات التواصل</li>
+                    <li>هياكل البيانات</li>
+                </ul>
+            </div> -->
+                </div>
+        </div>        
+    <div class="grid"  id="Listar">       
+        <div class="subject1 shadow" id="materia.1-11">
+            <div class="text">
+                <h2>الماده:</h2>
+                <h2>هندسه البرمجيات</h2>
+                <h2>عدد الساعات:3</h2>
+                <input type="checkbox" class="choose">
+            </div>
+        </div>
+        
+        
+        <div class="subject2 shadow" id="materia.1-10">
+           <div class="text">
+               <h2>الماده :</h2>
+               <h2>نظم المعلومات</h2>
+               <h2>عدد الساعات :3</h2>
+               <input type="checkbox" class="choose">
+           </div>
+        </div>
+        
+        
+        <div class="subject3 shadow" id="materia.1-1">
+           <div class="text">
+               <h2>الماده:</h2>
+               <h2>الرياضيات المتقطعه</h2>
+               <h2>عدد الساعات:3</h2>
+               <input type="checkbox" class="choose">
+           </div>
+        </div>
+        
+        
+        <div class="subject4 shadow" id="materia.1-7">
+           <div class="text">
+               <h2>الماده:</h2>
+               <h2>قواعد البيانات</h2>
+               <h2>عدد الساعات:3</h2>
+               <input type="checkbox" class="choose">
+           </div>
+        </div>
+        
+        
+        <div class="subject5 shadow" id="materia.1-5">
+           <div class="text">
+               <h2>الماده:</h2>
+               <h2>رياده الاعمال</h2>
+               <h2>عدد الساعات:2</h2>
+               <input type="checkbox" class="choose">
+           </div>
+        </div>
+        
+        
+        <div class="subject6 shadow" id="materia.1-9">
+           <div class="text">
+               <h2>الماده:</h2>
+               <h2>نظم التشغيل</h2>
+               <h2>عدد الساعات:3</h2>
+               <input type="checkbox" class="choose">
+           </div>
+        </div>
+        
+        
+        <div class="subject7 shadow" id="materia.1-4">
+           <div class="text">
+               <h2>الماده:</h2>
+               <h2>تعلم الالة</h2>
+               <h2>عدد الساعات:3</h2>
+               <input type="checkbox" class="choose">
+           </div>
+        </div>
+        
+        
+        <div class="subject8 shadow" id="materia.1-2">
+           <div class="text">
+               <h2>الماده:</h2>
+               <h2>انجليزى-1</h2>
+               <h2>عدد الساعات :2</h2>
+               <input type="checkbox" class="choose">
+           </div>
+        </div>
+        
+        
+        <div class="subject9 shadow" id="materia.1-3">
+           <div class="text">
+               <h2>الماده:</h2>
+               <h2>برمجه الويب</h2>
+               <h2>عدد الساعات :3</h2>
+               <input type="checkbox" class="choose">
+           </div>
+        </div>
+       
+       
+        <div class="subject10 shadow" id="materia.1-6">
+           <div class="text">
+               <h2>الماده: </h2>
+               <h2>شبكات الحاسب</h2>
+               <h2>عدد الساعات:3</h2>
+               <input type="checkbox" class="choose">
+           </div>
+        </div>
+        
+        
+        <div class="subject11 shadow" id="materia.1-8">
+           <div class="text">
+               <h2>الماده:</h2>
+               <h2>مهارات التواصل</h2>
+               <h2>عدد الساعات:2</h2>
+               <input type="checkbox" class="choose">
+           </div>
+        </div>
+        
+        
+        <div class="subject12 shadow" id="materia.1-12">
+           <div class="text">
+               <h2>الماده:</h2>
+               <h2>هياكل البيانات </h2>
+               <h2>عدد الساعات:3</h2>
+               <input type="checkbox" class="choose">
+           </div>
+        </div>
+    </div> 
+                <button class="save"><strong>حفظ</strong></button>
+                <div id="Button"><a href="#" onclick="sortdiv1();">تصنيف</a></div>
+     </div>
+ </div>
+
+  <!-- <div class="search-box">
+    <input type="text" id="search" placeholder="ابحث عن مادة">
+  </div> -->
+  <!-- <div class="cont">
+            <div class="search-box" onclick="showlist()" id="search-bar">
+                <i class="fa-solid fa-magnifying-glass "></i>
+                <input type="text" placeholder="Search" class="search" id="search">
+            </div>
+            <div class="list-search" id="list-search">
+                <ul id="list">
+                    <li>software engneering</li>
+                    <li>Information System</li>
+                    <li>Discrete</li>
+                    <li>Database</li>
+                    <li>Entrepreneurship</li>
+                    <li>Operating System</li>
+                    <li>Machine Learning</li>
+                    <li>English-1</li>
+                    <li>Web Programing</li>
+                    <li>Computer Networks</li>
+                    <li>Communication Skills</li>
+                    <li>Data Structure</li>
+                </ul>
+            </div>
+        </div>
+
+
+  <div class="grid" id="List">
+        
+        
+                <div class="subject1 shadow" id="mater.1-11" data-subject="software engneering">
+                    <div class="text">
+                        <h2>Course:  </h2>
+                        <h2 >software engneering</h2>
+                        <h2>credit hours: 3</h2>
+                        <input type="checkbox" class="choose">
+                    </div>
+                </div>
+                
+                <div class="subject2 shadow" id="mater.1-8" data-subject="Information System">
+                    <div class="text">
+                        <h2>Course: </h2>
+                        <h2 >Information System</h2>
+                        <h2>credit hours: 3</h2>
+                        <input type="checkbox" class="choose">
+                    </div>
+                </div>
+               
+                <div class="subject3 shadow" id="mater.1-5" data-subject="Discrete">
+                    <div class="text">
+                        <h2>Course: </h2>
+                        <h2 >Discrete</h2>
+                        <h2>credit hours: 3</h2>
+                        <input type="checkbox" class="choose">
+                    </div>
+                </div>
+               
+                <div class="subject4 shadow" id="mater.1-3" data-subject="Database">
+                    <div class="text">
+                        <h2>Course:</h2>
+                        <h2 >Database</h2>
+                        <h2>credit hours: 3</h2>
+                        <input type="checkbox" class="choose">
+                    </div>
+                </div>
+           
+                <div class="subject5 shadow" id="mater.1-7" data-subject="Entrepreneurship">
+                    <div class="text">
+                        <h2>Course:</h2>
+                        <h2 >Entrepreneurship</h2>
+                        <h2>credit hours: 2</h2>
+                        <input type="checkbox" class="choose">
+                    </div>
+                </div>
+              
+                <div class="subject6 shadow" id="mater.1-10" data-subject="Operating System">
+                    <div class="text">
+                        <h2>Course: </h2>
+                        <h2 >Operating System</h2>
+                        <h2>credit hours: 3</h2>
+                        <input type="checkbox" class="choose">
+                    </div>
+                </div>
+                
+                <div class="subject7 shadow" id="mater.1-9" data-subject="Machine Learning">
+                    <div class="text">
+                        <h2>Course: </h2>
+                        <h2>Machine Learning</h2>
+                        <h2>credit hours: 3</h2>
+                        <input type="checkbox" class="choose">
+                    </div>
+                </div>
+               
+                <div class="subject8 shadow" id="mater.1-6" data-subject="English-1">
+                    <div class="text">
+                        <h2>Course:</h2>
+                        <h2 >English-1</h2>
+                        <h2>credit hours: 2</h2>
+                        <input type="checkbox" class="choose">
+                    </div>
+                </div>
+                
+                <div class="subject9 shadow" id="mater.1-12" data-subject="Web Programing">
+                    <div class="text">
+                        <h2>Course: </h2>
+                        <h2 >Web Programing</h2>
+                        <h2>credit hours: 3</h2>
+                        <input type="checkbox" class="choose">
+                    </div>
+                </div>
+                
+                <div class="subject10 shadow" id="mater.1-2" data-subject="Computer Networks">
+                    <div class="text">
+                        <h2>Course: </h2>
+                        <h2 >Computer Networks</h2>
+                        <h2>credit hours: 3</h2>
+                        <input type="checkbox" class="choose">
+                    </div>
+                </div>
+                
+                <div class="subject11 shadow" id="mater.1-1" data-subject="Communication Skills">
+                    <div class="text">
+                        <h2>Course:</h2>
+                        <h2>Communication Skills</h2>
+                        <h2>credit hours: 2</h2>
+                        <input type="checkbox" class="choose">
+                    </div>
+                </div>
+
+                <div class="subject12 shadow" id="mater.1-4" data-subject="Data Structure">
+                    <div class="text" >
+                        <h2>Course:</h2>
+                        <h2 ><a href="#">Data Structure </a></h2>
+                        <h2>credit hours: 3</h2>
+                        <input type="checkbox" class="choose">
+                    </div>
+                </div>
+                 
+   </div> 
+      <button class="save"><strong>Save</strong></button>
+    <div id="Button"><a onclick="sortdiv();">SORT</a></div> -->
+
+  <!-- JavaScript -->
+ <script src="newcourse.js"></script>
+
+</body>
 </html>

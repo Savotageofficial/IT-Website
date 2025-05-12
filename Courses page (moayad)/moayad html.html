@@ -6,63 +6,221 @@
     <div class="container">
         <div class="header">
 
+          
+
           <div class="title">
             Helwan university
           </div>
-          <div class="logo">
+          
            
           </div>
         </div>
     </div>
-    <link rel="stylesheet" href="moayad.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<div class="menu">
-    <ul class="menu-content">
-        <li><a href="C:\Users\moham\Downloads\IT Project\website\home\Home.html"><span class="material-symbols-outlined">home</span><span>Home</span></a></li>
-                    <li><a href="C:\Users\moham\Downloads\IT Project\website\login (mariam)\index (1).html"><span class="material-symbols-outlined">Login</span><span>Login</span></a></li>
-                    <li><a href="C:\Users\moham\Downloads\IT Project\website\Books Page (menna)\Books.html"><span class="material-symbols-outlined">Book</span><span>Books Page</span></a></li>
-                    <li><a href="C:\Users\moham\Downloads\IT Project\website\Lectures (mohamed)\Lectures.html"><span class="material-symbols-outlined">School</span><span>Lectures</span></a></li>
-                    <li><a href="#"><span class="material-symbols-outlined">settings</span><span>Settings</span></a></li>
-                    <li><a href="C:\Users\moham\Downloads\IT Project\website\Student's Information (menna)\StudentInfo.html"><span class="material-symbols-outlined">person</span><span>Account</span></a></li>
-                    <li><a href="C:\Users\moham\Downloads\IT Project\website\Map Page (moayad)\Map.html"><span class="material-symbols-outlined">Map</span><span>Our Map</span></a></li>
-                    <li><a href="#"><span class="material-symbols-outlined">logout</span><span>Logout</span></a></li>
-    </ul>
-</div>
 
 <body class="light-mode">
-    <header class="header">     
-               <div class="menu_icon"><h2><a class="dark" href="#"><span class="material-symbols-outlined">dark_mode</span><span>Dark Mode</span></a></h2></div>          <div class="menu_icon"><h2> </h2></div>
+    
 
+    <div id="en" class="hiddenen">
+   <div class="menu">
+                <ul class="menu-content">
+                    <li><a href="https://savotageofficial.github.io/IT-website/"><span class="material-symbols-outlined">home</span><span>Home</span></a></li>
+                    <li><a href="https://savotageofficial.github.io/IT-website/login%20(mariam)/login.html"><span class="material-symbols-outlined">Login</span><span>Login</span></a></li>
+                    <li><a href="https://savotageofficial.github.io/IT-website/Books%20Page%20(menna)/University-textbooks-2-1.html"><span class="material-symbols-outlined">Book</span><span>Books Page</span></a></li>
+                    <li><a href="https://savotageofficial.github.io/IT-website/Lectures%20(mohamed)/Lectures.html"><span class="material-symbols-outlined">School</span><span>Lectures</span></a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">settings</span><span>Settings</span></a></li>
+                    <li><a href="Student's Information (menna)/Profile-page-3 (1).html"><span class="material-symbols-outlined">person</span><span>Account</span></a></li>
+                    <li><a href="https://savotageofficial.github.io/IT-website/Map%20Page%20(moayad)/Map.html"><span class="material-symbols-outlined">Map</span><span>Our Map</span></a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">logout</span><span>Logout</span></a></li>
+                </ul>
+            </div>
+
+
+
+
+    <header class="header">
+
+
+
+        
+        <button onclick="dark_mode()" class="dark" href="#">
+            <span class="material-symbols-outlined">dark_mode</span>
+            <span>Dark Mode</span>
+                </button>
+
+        
+              
         <h1>HELWAN UNIVERSITY</h1>
-        <img src="moayad.jpeg" alt="university's logo" style="height: 70px; width: 70px;border-radius: 30px;">
+        <img src="moayad.jpg" alt="university's logo" style="height: 70px; width: 70px;border-radius: 30px;">
     </header>
+    
+                <input type="text" placeholder="Search" class="search" id="search">
+            <div class="list-search" id="list-search">
+                <ul id="list">
 
+            </div>
     <main>
-        <h2 class="courses-title">COURSES:</h2>
+       
         <div class="mode-toggle">
-            <button onclick="setLightMode()">Light</button>
-            <button onclick="setDarkMode()">Dark</button>
+
         </div>
 
+
+<div class="search-bar">
+            <div class="search-icon" style="height:35px; width:30px;">☰</div>
+            <input type="text" placeholder="Hinted search text" style="color:#000000" id="searchInput" onkeyup="handleSearch()">
+            <button class="search-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27px" height="30px" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.414-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+            </button>
+        </div>
+    
+<div id="categoriescontainer">
+          
         <section class="courses">
-            <div class="course-card">
+            <div class="course-card"data-subject="Course HTML&CSS">
                 <h3>Course HTML&CSS</h3>
                 <p>Learn the basics and start a site from scratch</p>
                 <button class="signup-btn">Sign up</button>
             </div>
 
-            <div class="course-card">
+            <div class="course-card"data-subject="Python course">
                 <h3>Python course</h3>
                 <p>Suitable for beginners with practical applications Projects</p>
                 <button class="signup-btn">Sign up</button>
             </div>
 
-            <div class="course-card">
+            <div class="course-card"data-subject="Course DataBase">
                 <h3>Course DataBase</h3>
                 <p>Learn to work with data using Excel and Python</p>
                 <button class="signup-btn">Sign up</button>
             </div>
+
+
+           
         </section>
+
+            <section class="courses">
+                <div class="course-card" data-subject="C#">
+                    <h3>C#</h3>
+                    <p>Learn C# to create your projects easily and effectively</p>
+                    <button class="signup-btn">Sign up</button>
+                </div>
+                
+                    <div class="course-card"data-subject="C++ and C" >
+                        <h3>C++ and C</h3>
+                        <p>Master C and C++ to build fast, powerful, and efficient software from the ground u</p>
+                        <button class="signup-btn">Sign up</button>
+                    </div>
+                        <div class="course-card"data-subject="Java script">
+                            <h3>Java script</h3>
+                            <p>Learn JavaScript to make interactive and dynamic websites with ease</p>
+                            <button class="signup-btn">Sign up</button>
+                        </div>
+        </section>
+       </div>
+    </main>
+<div class="tape">
+    <footer class="footer">
+        <p>2025 .Helwan University - All Rights Reserved</p>
+        <div class="social-icons">
+            <img src="instagram-icon.png" alt="Instagram">
+            <img src="facebook-icon.png" alt="Facebook">
+        </div>
+        
+    </footer>
+</div>
+</div>
+<div id="ar">
+    <div class="menu">
+        <ul class="menu-content">
+            <li><a href="#"><span class="material-symbols-outlined">home</span><span>الرئسية</span></a></li>
+            <li><a href="#"><span class="material-symbols-outlined">Login</span><span>تسجيل الدخول</span></a></li>
+            <li><a href="#"><span class="material-symbols-outlined">Book</span><span>صفحة الكتب</span></a></li>
+            <li><a href="#"><span class="material-symbols-outlined">School</span><span>المحاضارات</span></a></li>
+            <li><a href="#"><span class="material-symbols-outlined">settings</span><span>الاعدادات</span></a></li>
+            <li><a href="#"><span class="material-symbols-outlined">person</span><span>الحساب</span></a></li>
+            <li><a href="#"><span class="material-symbols-outlined">Map</span><span>خريطتنا</span></a></li>
+            <li><a href="#"><span class="material-symbols-outlined">logout</span><span>تسجيل الخروج</span></a></li>
+           <button onclick="hide()" id="btn"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="black"><path d="M480-80q-84 0-157-31.5T196-197q-54-54-85-127.5T80-482q0-84 31-156.5T196-765q54-54 127-84.5T480-880q84 0 157 30.5T764-765q54 54 85 126.5T880-482q0 84-31 157.5T764-197q-54 54-127 85.5T480-80Zm0-58q35-36 58.5-82.5T577-331H384q14 60 37.5 108t58.5 85Zm-85-12q-25-38-43-82t-30-99H172q38 71 88 111.5T395-150Zm171-1q72-23 129.5-69T788-331H639q-13 54-30.5 98T566-151ZM152-391h159q-3-27-3.5-48.5T307-482q0-25 1-44.5t4-43.5H152q-7 24-9.5 43t-2.5 45q0 26 2.5 46.5T152-391Zm221 0h215q4-31 5-50.5t1-40.5q0-20-1-38.5t-5-49.5H373q-4 31-5 49.5t-1 38.5q0 21 1 40.5t5 50.5Zm275 0h160q7-24 9.5-44.5T820-482q0-26-2.5-45t-9.5-43H649q3 35 4 53.5t1 34.5q0 22-1.5 41.5T648-391Zm-10-239h150q-33-69-90.5-115T565-810q25 37 42.5 80T638-630Zm-254 0h194q-11-53-37-102.5T480-820q-32 27-54 71t-42 119Zm-212 0h151q11-54 28-96.5t43-82.5q-75 19-131 64t-91 115Z"/></svg></button>
+        </ul>
+    </div>
+
+    <header class="header">  
+            
+               <button onclick="dark_mode()" class="dark" href="#">
+                <span class="material-symbols-outlined">dark_mode
+                </span>
+                <span>الوضع_الداكن</span>
+                    </button>
+
+
+                    
+        <h1>جامعه حلوان</h1>
+        <img src="moayad.jpg" alt="university's logo" style="height: 70px; width: 70px;border-radius: 30px;">
+    </header>
+
+    <main>
+
+
+   
+
+
+
+
+
+        <h2 class="courses-title">دورات:</h2>
+        <div class="mode-toggle">
+            <button onclick="setLightMode()">Light</button>
+            <button onclick="setDarkMode()">Dark</button>
+        </div>
+ 
+
+
+
+
+
+        <section class="courses">
+            <div class="course-card">
+                <h3>دورة HTML&CSS</h3>
+                <p>تعلم الاساسيات وابدا موقعا من الصفر</p>
+                <button class="signup-btn">سجل</button>
+            </div>
+
+            <div class="course-card">
+                <h3>Python دورة</h3>
+                <p>مناسب للمبتدئين الذين لديهم تطبيقات عمليه </p>
+                <button class="signup-btn">سجل</button>
+            </div>
+
+            <div class="course-card">
+                <h3>دورة DataBase</h3>
+                <p>تعلم العمل مع البيانات مع Excel و Python</p>
+                <button class="signup-btn">سجل</button>
+            </div>
+        </section>
+
+            <section class="courses">
+                <div class="course-card">
+                    <h3>C#</h3>
+                    <p>تعلم C# لإنشاء مشاريعك بسهولة وفعالية.</p>
+                    <button class="signup-btn">سجل</button>
+                </div>
+                
+                    <div class="course-card">
+                        <h3>C++ and C</h3>
+                        <p>اتقن لغتي C و C++ لبناء برامج قوية وسريعة وفعّالة من الصفر.</p>
+                        <button class="signup-btn">سجل</button>
+                    </div>
+                        <div class="course-card">
+                            <h3>Java script</h3>
+                            <p>اتعلّم JavaScript عشان تعمل مواقع تفاعلية وديناميكية بسهولة</p>
+                            <button class="signup-btn">سجل</button>
+                        </div>
+        </section>
+
     </main>
 
     <footer class="footer">
@@ -73,6 +231,9 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+</div>
+<script src="script.js"></script>
+
+
 </body>
 </html>

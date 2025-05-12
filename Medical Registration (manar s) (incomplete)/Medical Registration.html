@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html dir="rtl">
     <head>
         <meta charset="UTF-8"/> 
         <title> Student Clinical Examination</title>
         <meta name="discribtion" content="نظام الكشف الطبي للطلاب الجدد بجامعة حلوان">
-        <meta name="viewport" content="width=device-width,initial-scale=1" >
+        <meta name="viewport" content="width=device-width,initial-scale=1" >  <!-- بتخلي الصفحة متجاوبة مع احجام الشاشات المختلفة -->
         <link rel="stylesheet" href="page1.css">
+        <script src="page1.js" defer></script>
     </head>
     <body>
       <header class="header"> 
-        
-              <div class="menu_icon"></div>
+         <button id="dark-mode-btn">
+            <span class="material-symbols-outlined">dark_mode</span>
+        </button>
+        <div class="menu_icon"></div>
               <div class="title">
                 Helwan university
               </div>
@@ -22,25 +25,47 @@
         
                   <div class="menu">
                     <ul class="menu-content">
-                      <li><a href="C:\Users\moham\Downloads\IT Project\website\home\Home.html"><span class="material-symbols-outlined">home</span><span>Home</span></a></li>
-                      <li><a href="C:\Users\moham\Downloads\IT Project\website\login (mariam)\index (1).html"><span class="material-symbols-outlined">Login</span><span>Login</span></a></li>
-                      <li><a href="C:\Users\moham\Downloads\IT Project\website\Books Page (menna)\Books.html"><span class="material-symbols-outlined">Book</span><span>Books Page</span></a></li>
-                      <li><a href="C:\Users\moham\Downloads\IT Project\website\Lectures (mohamed)\Lectures.html"><span class="material-symbols-outlined">School</span><span>Lectures</span></a></li>
-                      <li><a href="#"><span class="material-symbols-outlined">settings</span><span>Settings</span></a></li>
-                      <li><a href="C:\Users\moham\Downloads\IT Project\website\Student's Information (menna)\StudentInfo.html"><span class="material-symbols-outlined">person</span><span>Account</span></a></li>
-                      <li><a href="C:\Users\moham\Downloads\IT Project\website\Map Page (moayad)\Map.html"><span class="material-symbols-outlined">Map</span><span>Our Map</span></a></li>
-                      <li><a href="#"><span class="material-symbols-outlined">logout</span><span>Logout</span></a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">home</span><span>Home</span></a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">Login</span><span>Login</span></a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">Book</span><span>Books Page</span></a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">School</span><span>Lectures</span></a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">settings</span><span>Settings</span></a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">person</span><span>Account</span></a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">Map</span><span>Our Map</span></a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">logout</span><span>Logout</span></a></li>
                     </ul>
                 </div>
                 <main>
+                 <div class="login-container">
+                  <div class="login-box">
+                  <form id="loginform">
                   <div id="inp">
-                        <input type="text" placeholder="الكلية"> 
+                        <input type="text" id="college" placeholder="الكلية" data-lang="college"> 
                         <br>
-                        <input type="password" placeholder="الرقم القومي">
+                        <div class="student-type" data-lang="student-type">
+                          <label>
+                            <input type="radio" name="nationality" value="مصري" >
+                            <span data-lang="egyptian">مصري</span>
+                          </label>
+                      <br>
+                          <label>
+                            <input type="radio" name="nationality" value="وافد">
+                            <span data-lang="expatriate">وافد</span>                 
+                          </label>
+                        </div>
+                        <input type="password" id="national-id" placeholder="الرقم القومي" data-lang="nationalid">
                         <br>
-                        <button>تسجيل الدخول</button>
+                        <button type="submit" class="Login" data-lang="Login">تسجيل الدخول</button>
                   </div>
-                    
-                </main>
-    </body>
+                </form>
+              </div>
+            </div>
+        </main>
+        <select id="lang-selector">
+         <option value="ar">اللغة العربية</option>
+         <option value="en">English</option>
+        </select>
+        <footer><h2 data-lang="footer">تنويه هام : طلابنا الأعزاء في حالة عدم تمكنك من الدخول الرجاء مراجعة بياناتك في شئون الطلاب في كليتك المرشح لها</h2></footer>
+       
+      </body>
 </html>

@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>البوابة الإلكترونية لأعضاء هيئة التدريس</title>
     <link rel="stylesheet" href="page2.css">
+    <script src="page2.js" defer></script>
 </head>
 <body>
     <header class="header"> 
-        
+       <button id="dark-mode-btn">
+            <span class="material-symbols-outlined">dark_mode</span>
+        </button>
         <div class="menu_icon"></div>
         <div class="title">
           Helwan university
@@ -20,14 +23,14 @@
 </header>
 <div class="menu">
     <ul class="menu-content">
-        <li><a href="C:\Users\moham\Downloads\IT Project\website\home\Home.html"><span class="material-symbols-outlined">home</span><span>Home</span></a></li>
-                    <li><a href="C:\Users\moham\Downloads\IT Project\website\login (mariam)\index (1).html"><span class="material-symbols-outlined">Login</span><span>Login</span></a></li>
-                    <li><a href="C:\Users\moham\Downloads\IT Project\website\Books Page (menna)\Books.html"><span class="material-symbols-outlined">Book</span><span>Books Page</span></a></li>
-                    <li><a href="C:\Users\moham\Downloads\IT Project\website\Lectures (mohamed)\Lectures.html"><span class="material-symbols-outlined">School</span><span>Lectures</span></a></li>
-                    <li><a href="#"><span class="material-symbols-outlined">settings</span><span>Settings</span></a></li>
-                    <li><a href="C:\Users\moham\Downloads\IT Project\website\Student's Information (menna)\StudentInfo.html"><span class="material-symbols-outlined">person</span><span>Account</span></a></li>
-                    <li><a href="C:\Users\moham\Downloads\IT Project\website\Map Page (moayad)\Map.html"><span class="material-symbols-outlined">Map</span><span>Our Map</span></a></li>
-                    <li><a href="#"><span class="material-symbols-outlined">logout</span><span>Logout</span></a></li>
+        <li><a href="#"><span class="material-symbols-outlined">home</span><span>Home</span></a></li>
+        <li><a href="#"><span class="material-symbols-outlined">Login</span><span>Login</span></a></li>
+        <li><a href="#"><span class="material-symbols-outlined">Book</span><span>Books Page</span></a></li>
+        <li><a href="#"><span class="material-symbols-outlined">School</span><span>Lectures</span></a></li>
+        <li><a href="#"><span class="material-symbols-outlined">settings</span><span>Settings</span></a></li>
+        <li><a href="#"><span class="material-symbols-outlined">person</span><span>Account</span></a></li>
+        <li><a href="#"><span class="material-symbols-outlined">Map</span><span>Our Map</span></a></li>
+        <li><a href="#"><span class="material-symbols-outlined">logout</span><span>Logout</span></a></li>
     </ul>
 </div>
 
@@ -36,47 +39,50 @@
         <div class="services-grid">
             <a href="service.html" class="service" target="_blank">
                 <img src="images/profile.jpg" alt="البروفايل" width="100" height="100">
-                <h2>الصفحة الشخصية</h2>
+                <h2 data-lang="profile">الصفحة الشخصية</h2>
             </a>
 
             <a href="service.html" class="service" target="_blank">
-                <img src="images/salary.jpg" alt="المرتب"width="100" height="100">
-                <h2>المرتب</h2>
+                <img src="images/salary.jpg" alt="المرتب"width="100" height="100" >
+                <h2 data-lang="salary">المرتب</h2>
             </a>
 
             <a href="service.html" class="service" target="_blank">
-                <img src="images/book.jpg" alt="دوراتي التدريبية"width="100" height="100">
-                <h2>دوراتي التدريبية</h2>
+                <img src="images/book.jpg" alt="دوراتي التدريبية"width="100" height="100" >
+                <h2 data-lang="trainingcourses" >دوراتي التدريبية</h2>
             </a>
             <a href="service.html" class="service" target="_blank">
                 <img src="images/research.jpg" alt="مشاريعي البحثية"width="100" height="100">
-                <h2>مشاريعي البحثية</h2>
+                <h2 data-lang="Researchprojects">مشاريعي البحثية</h2>
             </a>
             <a href="service.html" class="service" target="_blank">
                 <img src="images/WhatsApp Image 2025-04-21 at 13.21.29_c4411be2.jpg" alt="مكافأة النشر الدولي"width="100" height="100">
-                <h2>مكافأة النشر الدولي</h2>
+                <h2 data-lang="Internationalpublishingbonus">مكافأة النشر الدولي</h2>
             </a>
 
             <a href="service.html" class="service" target="_blank" >
                 <img src="images/WhatsApp Image 2025-04-21 at 13.18.57_0708e4d4.jpg" alt="طلب إنشاء حساب"width="100" height="100">
-                <h2>طلب إنشاء حساب</h2>
+                <h2 data-lang="CreateAccountRequest">طلب إنشاء حساب</h2>
             </a>
 
             <a href="service.html" class="service"target="_blank" >
                 <img src="images/WhatsApp Image 2025-04-21 at 13.18.57_af15e164.jpg" alt="طلب التماس"width="100" height="100">
-                <h2>طلب التماس</h2>
+                <h2 data-lang="AppealRequest">طلب التماس</h2>
             </a>
 
             <a href="service.html" class="service" target="_blank">
                 <img src="images/WhatsApp Image 2025-04-21 at 13.33.48_0b956a16.jpg" alt="طلب شهادة خبرة"width="100" height="100">
-                <h2>طلب شهادة خبرة</h2>
+                <h2 data-lang="ExperienceCertificateRequest">طلب شهادة خبرة</h2>
             </a> 
         </div>
       </div>
     </main>
-
-    <footer>
-        <p>جميع الحقوق محفوظة © جامعة حلوان 2025</p>
+ <select id="lang-selector">
+         <option value="ar">اللغة العربية</option>
+         <option value="en">English</option>
+        </select>
+    <footer >
+        <p><h2 data-lang="footer">جميع الحقوق محفوظة © جامعة حلوان </h2></p>
     </footer>
 </body>
 </html>

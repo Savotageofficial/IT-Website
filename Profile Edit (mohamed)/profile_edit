@@ -1,0 +1,293 @@
+<html>
+<head>
+    
+    
+    <link rel="stylesheet" href="profile edit MYcss1.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<div id="en" class="hiddenen" >
+    <div class="container">
+        <div class="header">
+           <div class="menu_icon"><h2><button onclick="toggleDarkMode()" class="dark" href="#"><span class="material-symbols-outlined" id="dark_mod"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q8 0 17 .5t23 1.5q-36 32-56 79t-20 99q0 90 63 153t153 63q52 0 99-18.5t79-51.5q1 12 1.5 19.5t.5 14.5q0 150-105 255T480-120Zm0-60q109 0 190-67.5T771-406q-25 11-53.67 16.5Q688.67-384 660-384q-114.69 0-195.34-80.66Q384-545.31 384-660q0-24 5-51.5t18-62.5q-98 27-162.5 109.5T180-480q0 125 87.5 212.5T480-180Zm-4-297Z"/></svg></span></button><span>Dark Mode</span>
+          </h2></div>
+
+          <div class="title">
+            Helwan university
+          </div>
+          <div class="logo">
+            <img src="Helwan.jpeg" alt="university&#39;s logo" style="height: 70px; width: 70px;border-radius: 30px;">
+          </div>
+        </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div class="menu">
+  <ul class="menu-content">
+      <li><a href="https://savotageofficial.github.io/IT-website/"><span class="material-symbols-outlined">home</span><span>Home</span></a></li>
+      <li><a href="https://savotageofficial.github.io/IT-website/login%20(mariam)/login.html"><span class="material-symbols-outlined">Login</span><span>Login</span></a></li>
+      <li><a href="https://savotageofficial.github.io/IT-website/Books%20Page%20(menna)/University-textbooks-2-1.html"><span class="material-symbols-outlined">Book</span><span>Books Page</span></a></li>
+      <li><a href="https://savotageofficial.github.io/IT-website/Lectures%20(mohamed)/Lectures.html"><span class="material-symbols-outlined">School</span><span>Lectures</span></a></li>
+      <li><a href="#"><span class="material-symbols-outlined">settings</span><span>Settings</span></a></li>
+      <li><a href="Student's Information (menna)/Profile-page-3 (1).html"><span class="material-symbols-outlined">person</span><span>Account</span></a></li>
+      <li><a href="https://savotageofficial.github.io/IT-website/Map%20Page%20(moayad)/Map.html"><span class="material-symbols-outlined">Map</span><span>Our Map</span></a></li>
+      <li><a href="#"><span class="material-symbols-outlined">logout</span><span>Logout</span></a></li>
+  </ul>
+</div>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <h2 class="header_top"><strong>profile editor</strong></h2>
+    <div class="image_div"> 
+        <img src="prof.jpeg" hight="200" width="200" alt=" image error">
+    </div>
+<div class="form_div" id="dim">
+    <h2 class="internal_header">Personal information</h2>
+    
+    <form id="form4" class="gridf">
+        <div>
+        <span><label>Name:</label></span>
+       <input placeholder="Enter your name" class="inp"type="text" id="name" style="transform: translateX(40px);">
+       <span style="margin-left: 243px;" ><label>Birth of Date:</label></span>
+       <input type="date" class="inp" id="Date"placeholder="Date of Birth">
+       </div>
+       <div>
+        <span><label>Address:</label></span>
+       <input type="text" class="inp" id="address" placeholder="address" style="transform: translateX(20px);">
+       <span style="margin-left: 180px;"><label>ID namber:</label></span>
+       <input type="number" class="inp" id="ID_n" placeholder="ID namber"style="margin-left: 10px;">
+       </div>
+       <div>
+        <span><label>Religion:</label></span>
+       <input type="text" class="inp" id="Religion" placeholder="Religion" style="transform: translateX(20px);">
+       <span><label style="margin-left: 170px;">Birth place:</label></span>
+       <input type="text" class="inp" id="Birth" placeholder="birth place" style="margin-left:0px; transform: translateX(18px);">
+    </div>
+    <div>
+      <span><label>Nationality:</label></span>
+       <input type="text" class="inp" id="Nation" placeholder="Nationality" style="transform: translateX(4px);">
+       <span><label style="margin-left: 190px;">Gender:</label></span>
+       <select style="width: 210px" class="inp" id="Gender"><option><strong>Male</strong></option>
+        <option><strong>Female</strong></option></select>
+    </div>
+    <div>
+      <span><label>Phone:</label></span>
+       <input type="number" class="inp" id="Phone"placeholder="Phone Number" style="transform: translateX(36px);">
+       <span><label style="margin-left: 165px;transform: translateX(12px);">Government:</label> </span>
+       <input type="text" class="inp" id="Government" placeholder="Government" style="transform: translateX(15px);">
+    </div>
+  <span><label>E-mail:</label></span>
+       <input type="email" class="inp" id="Email" placeholder="E-mail of Student">
+
+         <h2 class="internal_header">Scientific information</h2>
+
+          <div>
+            <span><label>Faculity:</label></span>
+            <input type="text" class="inp" id="Faculity" placeholder="Faculity" style="transform: translateX(18px);">
+            <span><label style="margin-left: 206px;">AC year:</label></span>
+            <input type="text" class="inp" id="Academic" placeholder="Academic year" style="margin-left: 3px;transform: translateX(10px);">
+          </div>
+          
+          <div>
+            <span><label>Student ID:</label></span>
+            <input type="number" class="inp" id="Student" placeholder="ID of Student">
+            <span><label style="margin-left: 200px;">Group:</label></span>
+            <input type="number" class="inp" id="Group" placeholder="Group" style="margin-left: 3px;transform: translateX(08px);">
+          </div>
+          <span><label>E-mail:</label></span>
+          <input type="email" class="inp" id="University"placeholder="University email">
+
+        <div>
+          
+          <button type="submit" class="butt" onclick="
+          button();
+          alert('the Date has been saved successfully');
+
+          ">SUBMIT</button>
+        </div>
+    </form>
+    <script src="js_profile editor.js">
+    </script>
+</div>
+</div>
+
+<div id="ar">
+
+    <div class="container">
+        <div class="header">
+           <div class="menu_icon"><h2><button onclick="toggleDarkMode()" class="dark" href="#"><span class="material-symbols-outlined" id="dark_mod"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q8 0 17 .5t23 1.5q-36 32-56 79t-20 99q0 90 63 153t153 63q52 0 99-18.5t79-51.5q1 12 1.5 19.5t.5 14.5q0 150-105 255T480-120Zm0-60q109 0 190-67.5T771-406q-25 11-53.67 16.5Q688.67-384 660-384q-114.69 0-195.34-80.66Q384-545.31 384-660q0-24 5-51.5t18-62.5q-98 27-162.5 109.5T180-480q0 125 87.5 212.5T480-180Zm-4-297Z"/></svg></span></button><span style="margin-bottom:10px;margin-left: 20px;">مظهر داكن</span>
+          </h2></div>
+
+          <div class="title">
+              جامعة حلوان
+          </div>
+          <div class="logo">
+            <img src="Helwan.jpg" alt="university&#39;s logo" style="height: 70px; width: 70px;border-radius: 30px;">
+          </div>
+        </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+<div class="menu">
+  <ul class="menu-content">
+      <li><a href="https://savotageofficial.github.io/IT-website/"><span class="material-symbols-outlined">home</span><span>الصفحة الرئسية</span></a></li>
+      <li><a href="https://savotageofficial.github.io/IT-website/login%20(mariam)/login.html"><span class="material-symbols-outlined">Login</span><span>تسجيل دخول </span></a></li>
+      <li><a href="https://savotageofficial.github.io/IT-website/Books%20Page%20(menna)/University-textbooks-2-1.html"><span class="material-symbols-outlined">Book</span><span>الكتب</span></a></li>
+      <li><a href="https://savotageofficial.github.io/IT-website/Lectures%20(mohamed)/Lectures.html"><span class="material-symbols-outlined">School</span><span>المحاضرات</span></a></li>
+      <li><a href="#"><span class="material-symbols-outlined">settings</span><span>العادادات</span></a></li>
+      <li><a href="Student's Information (menna)/Profile-page-3 (1).html"><span class="material-symbols-outlined">person</span><span>ملف الشخصي</span></a></li>
+      <li><a href="https://savotageofficial.github.io/IT-website/Map%20Page%20(moayad)/Map.html"><span class="material-symbols-outlined">Map</span><span>خريطتنا</span></a></li>
+      <li><a href="#"><span class="material-symbols-outlined">logout</span><span>Logout</span></a></li>
+  </ul>
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <div class="image_div1"> 
+        <img src="prof.jpg" hight="200" width="200" alt=" image error" >
+    </div>
+ 
+<div class="form_div1" style="background-color:rgba(165, 165, 165, 0.912); transform: translateX(-310px); margin-top :120px;" id="dim">
+    <h2 class=" internal_header" style ="padding-left:5px; text-align: center;">المعلومات الشخصية</h2>
+    
+    <form id="form5" class="gridf">
+      <div>
+            
+ <input type="text" class="inp" id="الاسم" style="transform: translateX(-50px);" placeholder="الاسم"> <span><label class="input_2" style="margin-left: 10px;">تاريخ الميلاد</label></span>
+ <input type="date" class="inp" id="تاريخ" style="transform: translateY(0px);" placeholder="تاريخ الميلاد"><span><label style="margin-right: 120px;" for="الاسم">الاسم</label></span> 
+          </div>
+            <div>
+           <input type="text" class="inp" name="العنوان" style="margin-left :70px;" placeholder="العنوان">
+           <span><label class="input_2">الرقم القومي</label></span> 
+            <input type="number" class="inp" id="ID_n" name="رقم1" style="transform: translateX(89px);" placeholder="الرقم القومي">
+           <span><label style="transform: translateX(45px);"> العنوان</label></span>
+            </div>
+            <div>
+            <input type="text" class="inp"  id="الديانة" placeholder="الديانة">
+          <span><label class="input_2"  style="margin-left: 10px;">مكان الميلاد</label></span>  
+            <input type="text" class="inp" id="مكان" placeholder="مكان الميلاد">
+           <span><label style="margin-right: 100px;">الديانة</label></span>
+         </div>
+         <div>
+            
+            <input type="text" class="inp" id="الجنسية" placeholder="الجنسية">
+           <span><label class="input_2"  style="margin-left: 10px;">النوع</label></span>
+            <select style="width: 210px; margin-right: 40px;" class="inp" id="النوع"><option><strong>ذكر</strong></option>
+            <option><strong>انثى</strong></option></select>
+           <span><label style="margin-right: 100px;">الجنسية</label></span>
+         
+         </div> 
+         <div>
+            <input type="number" class="inp" name="رقم2" placeholder="رقم الهاتف">
+          <span><label class="input_2"  style="margin-left: 10px;">المحافظة</label></span>
+            <input type="email" class="inp" id="المحافظة" placeholder="المحافظه">
+          <span><label style="margin-right: 90px;"> رقم الهاتف</label></span>
+         </div>
+
+         <span><label>البريدالكتروني</label></span> <input type="text" class="inp" id="الايميل" placeholder="الايميل">
+       
+           
+              <h2 class="internal_header" style ="padding-left:5px; text-align: center; transform: translateX(565px);">المعلومات العلمية</h2>
+              
+     
+               <div>
+                 
+                 <input type="text" class="inp" id="الكلية" placeholder="الكلية">
+                 <span><label class="input_2">المرحلة التعليمة</label></span>
+                 <input type="text" class="inp" id="سنة" style="transform: translateX(110px);" placeholder="المرحلة التعليمية">
+                <span><label> الكلية</label></span>
+               </div>
+
+               <div>
+                
+                 <input type="number" class="inp" id="طالب" placeholder="ID">
+                 <span><label class="input_2" style="margin-left: 10px;">المجموعة</label></span>
+                 <input type="number" class="inp" id="المجموعة" placeholder="المجموعة">
+                 <span><label style="margin-right: 100px;">رقم الطالب</label></span>
+               </div>
+               <span><label class="input_2" style="margin-left: 10px;"> البريد الجامعي</label></span><input type="email" class="inp" id="جامعة" placeholder="البريد الجامعي">
+           <div>
+          
+
+<button type="submit" class="butt" onclick="
+
+ const butt = document.querySelector('.butt');
+      if(butt.innerHTML=='حفظ'){
+         butt.innerHTML='تم الحفظ';
+        alert('لقد تم تعديل بياناتك بنجاح');
+      
+      }
+      else{
+        butt.innerHTML='تاكيد';
+      }
+">حفظ</button>
+  </div>
+    </form>
+    <script>
+
+function Mylocal_Storage1(){
+document.addEventListener('DOMContentLoaded',function() {
+   const form=document.getElementById('form5');
+
+   const savedDate2=localStorage.getItem('formData1');
+   if(savedDate2){
+    
+    const formData1=JSON.parse(savedDate2);
+    for(const key in formData1){
+      if(formData1.hasOwnProperty(key)){
+      const input=form5.elements[key];
+      if(input){
+        input.value=formData1[key];
+      }
+    }
+  }
+}
+
+form.addEventListener('input',function(e){
+  setInterval(()=>{
+       const formData1={
+          الاسم:form.elements.الاسم.value,
+          تاريخ:form.elements.تاريخ.value,
+          العنوان:form.elements.العنوان.value,
+          رقم1:form.elements.رقم1.value,
+          الديانة:form.elements.الديانة.value,
+          مكان:form.elements.مكان.value,
+          الجنسية:form.elements.الجنسية.value,
+          النوع:form.elements.النوع.value,
+          رقم2:form.elements.رقم2.value,
+          الايميل:form.elements.الايميل.value,
+          المحافظة:form.elements.المحافظة.value,
+          الكلية:form.elements.الكلية.value,
+         سنة:form.elements.سنة.value,
+         طالب:form.elements.طالب.value,
+         المجموعة:form.elements.المجموعة.value,
+         جامعة:form.elements.جامعة.value
+       };
+       localStorage.setItem('formData1',JSON.stringify(formData1));
+}, 2000);
+});
+
+form.addEventListener('submit',function(e){
+e.preventDefault();
+localStorage.removeItem('formData1');
+form.reset();
+});
+});
+
+}
+Mylocal_Storage1();
+</script>
+   
+
+</div>
+
+</div>
+
+<button onclick="hide()" id="btn"><svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="black"><path d="M480-80q-84 0-157-31.5T196-197q-54-54-85-127.5T80-482q0-84 31-156.5T196-765q54-54 127-84.5T480-880q84 0 157 30.5T764-765q54 54 85 126.5T880-482q0 84-31 157.5T764-197q-54 54-127 85.5T480-80Zm0-58q35-36 58.5-82.5T577-331H384q14 60 37.5 108t58.5 85Zm-85-12q-25-38-43-82t-30-99H172q38 71 88 111.5T395-150Zm171-1q72-23 129.5-69T788-331H639q-13 54-30.5 98T566-151ZM152-391h159q-3-27-3.5-48.5T307-482q0-25 1-44.5t4-43.5H152q-7 24-9.5 43t-2.5 45q0 26 2.5 46.5T152-391Zm221 0h215q4-31 5-50.5t1-40.5q0-20-1-38.5t-5-49.5H373q-4 31-5 49.5t-1 38.5q0 21 1 40.5t5 50.5Zm275 0h160q7-24 9.5-44.5T820-482q0-26-2.5-45t-9.5-43H649q3 35 4 53.5t1 34.5q0 22-1.5 41.5T648-391Zm-10-239h150q-33-69-90.5-115T565-810q25 37 42.5 80T638-630Zm-254 0h194q-11-53-37-102.5T480-820q-32 27-54 71t-42 119Zm-212 0h151q11-54 28-96.5t43-82.5q-75 19-131 64t-91 115Z"/></svg></button>
+
+<script> 
+let en  = document.getElementById("en").classList;
+  let ar  = document.getElementById("ar").classList;
+  function hide(){
+      en.toggle("hiddenen");
+      ar.toggle("hiddenar");
+  }
+</script>
+
+</body>
+</html>

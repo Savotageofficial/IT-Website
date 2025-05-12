@@ -13,13 +13,18 @@
             padding: 0;
             /* background-color:aqua; */
             /* background-image: linear-gradient(#f5f5f5, #c0c0c0); */
-            background-color: var(--first-color);
+            background: var(--first-color);
            display: flex;
            flex-direction: column;
            align-items: center;
-           
+           background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_ziiURQ6GHzEJjFRA5dCfGDZeNMYd1BQ9Ew&usqp=CAU');
+           background-repeat: no-repeat;
+           background-size:cover;
+  }     
 }
- 
+ .books{
+    
+ }
 
 .menu::-webkit-scrollbar {
     display: none;
@@ -117,6 +122,12 @@ margin:0px;
 }
    
 
+   
+   
+
+   
+   
+   
 .main-content {
     display: flex;
     flex-direction: column;
@@ -126,18 +137,26 @@ margin:0px;
     padding: 20px 0;
 }
 
+   
+   .university-textbooks{
+     text-align:center;
+   color:aliceblue;
+   font-size:70px;
+   margin-top:150px;
+   margin-bottom:0px;
+}
 
 
 .search-bar {
-    background-color:#00188f;
-        background-image: linear-gradient(#00188F, #000);
+    background-color:cornflowerblue;
+        background-image: linear-gradient(cornflowerblue, #000);
     backdrop-filter:blur(5px);
     padding: 10px;
     border-radius: 25px;
     display: flex;
     align-items: center;
     width: 50%;
-    margin-top:270px;
+    margin:auto;
     margin-bottom:100px;
     border: 1px solid #ccc;}
 .search-bar:hover{
@@ -172,19 +191,83 @@ margin:0px;
     fill: white;
 }
 
-.categories {
+   
+   
+   
+   
+   
+   
+   
+   
+  .view-buttons {
+    margin-bottom: 30px;
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    position: absolute;
+    top: 475px;
+    gap: 0px;
 }
 
+.view-btn {
+    padding: 10px 10px;
+    background-color:cornflowerblue;
+               background-image: linear-gradient(cornflowerblue, #000);
+    color: white;
+    border: none;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.view-btn:hover {
+    background-color:green;
+               background-image: linear-gradient(green, #000);
+}
+
+.categories.grid-view {
+    flex-direction: row;
+}
+
+.categories.list-view {
+    flex-direction: column;
+    align-items: center;
+}
+.categories.list-view article {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.catigories.list-view article img {
+    width: 400px;
+    height: 150px;
+} 
+   
+
+   
+   
+   
+   
+   
+   
+.categories {
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap: 20px;
+   display:flex;
+   flex-direction:row;;
+   }
+
 .category-card {
-    background-color:#00188F;
-               background-image: linear-gradient(#00188F, #000);
+    background-color:cornflowerblue;
+               background-image: linear-gradient(cornflowerblue, #000);
     color: aliceblue;
     border-radius: 30px;
     padding: 20px;
-    width: 150px;
     height: 150px;
+    width:150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -193,19 +276,20 @@ margin:0px;
     margin-bottom:50px;
     border: 1px solid white;
     display:none;
+    position:right;
 }
    .category-card:hover{
       box-shadow: 0 0 50px var(--third-color);
    }
 
    .category-card.show{
-      display:flex;
+      display:grid;
    }
 
 .category-card span {
-    font-size: 1.5em;
+    font-size: 1.7em;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .category-card .view-button {
@@ -215,11 +299,37 @@ margin:0px;
     padding: 8px 15px;
     border-radius: 20px;
     cursor: pointer;
-    font-size: 0.9em;
-}  
-   
-   
-   
+    font-size: 1em;
+    
+} 
+  
+
+.metal{
+          padding: 0px;
+         margin: 20px 0;
+         display: flex;
+         width:450px;       
+         height:190px;
+         border:1px solid white;   
+         background:var(--first-color);   
+         border-radius:30px;
+         color:var(--fourth-color);
+         margin-left:0px;
+         text-align:left;
+         margin-right:0px;
+}   
+   .metal.hidden{
+      display:none;
+   }
+.pra1, .pra2, .pra3, .pra4{
+   possition:absoute;
+   margin-top:40px;
+   font-size:17px;
+   text-align:center;
+   font-style:bold;
+   height:150px;
+   width:280px;
+}   
    
    
    #switch{
@@ -244,15 +354,17 @@ margin:0px;
   
    
   :root{
-    --first-color:antiguewhite;
+    --first-color:aliceblue;
     --second-color:black;
     --third-color:yellow;
+    --fourth-color:#00188f;
   }
   
   .darkmode{
     --first-color:black;
     --second-color:white;
     --third-color:blue;
+    --fourth-color:aliceblue;
   }
   
   
@@ -287,57 +399,96 @@ margin:0px;
 
 <div class="menu">
                 <ul class="menu-content">
-                    <li><a href=""><span class="material-symbols-outlined">home</span><span>Home</span></a></li>
-                    <li><a href="#"><span class="material-symbols-outlined">Login</span><span>Login</span></a></li>
-                    <li><a href="content://com.sec.android.app.myfiles.FileProvider/device_storage/0/%D8%A8%D9%8A%D8%AF%D8%AC%D8%A7%D8%AA%D9%8A/Profile-page.html">
-                       <span class="material-symbols-outlined">person</span><span>profile</span></a></li>
-                    <li><a href="#"><span class="material-symbols-outlined">School</span><span>Lectures</span></a></li>
+                    <li><a href="https://savotageofficial.github.io/IT-website/"><span class="material-symbols-outlined">home</span><span>Home</span></a></li>
+                    <li><a href="https://savotageofficial.github.io/IT-website/login%20(mariam)/login.html"><span class="material-symbols-outlined">Login</span><span>Login</span></a></li>
+                    <li><a href="https://savotageofficial.github.io/IT-website/Books%20Page%20(menna)/University-textbooks-2-1.html"><span class="material-symbols-outlined">Book</span><span>Books Page</span></a></li>
+                    <li><a href="https://savotageofficial.github.io/IT-website/Lectures%20(mohamed)/Lectures.html"><span class="material-symbols-outlined">School</span><span>Lectures</span></a></li>
                     <li><a href="#"><span class="material-symbols-outlined">settings</span><span>Settings</span></a></li>
-                    <li><a href="#"><span class="material-symbols-outlined">person</span><span>Account</span></a></li>
-                    <li><a href="#"><span class="material-symbols-outlined">Map</span><span>Our Map</span></a></li>
+                    <li><a href="Student's Information (menna)/Profile-page-3 (1).html"><span class="material-symbols-outlined">person</span><span>Account</span></a></li>
+                    <li><a href="https://savotageofficial.github.io/IT-website/Map%20Page%20(moayad)/Map.html"><span class="material-symbols-outlined">Map</span><span>Our Map</span></a></li>
                     <li><a href="#"><span class="material-symbols-outlined">logout</span><span>Logout</span></a></li>
                 </ul>
             </div>
 
 
-        <div class="search-bar">
-            <div class="search-icon" style="height:35px; width:30px;">☰</div>
-            <input type="text" placeholder="Hinted search text" style="color:#000000" id="searchInput" onkeyup="">
-            <button class="search-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="27px" height="30px" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.414-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                </svg>
-            </button>
-        </div>
 
+
+
+     
+     
+     
+     <div class="university-textbooks"><p>University Textbooks</p></div>
+     
+     
+     
+      <div class="main-content">
+    <div class="search-bar">
+        <div id="sortButton" class="search-icon" style="height:35px; width:30px; cursor: pointer;">☰</div>
+        <input type="text" placeholder="Hinted search text" style="color:#000000" id="searchInput" onkeyup="handleSearch()">
+        <button class="search-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="27px" height="30px" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.414-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+        </button>
+    </div>
+
+         
+         
+         
+         
+       <div class="view-buttons">
+     <button class="view-btn grid-view"><svg width="25" height="25" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm6 0H5v4h4zm4 0a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2zm6 0h-4v4h4zM3 15a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm6 0H5v4h4zm4 0a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2zm6 0h-4v4h4z" 
+        fill="aliceblue"/></svg></button>
+  <button class="view-btn list-view"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+     <path d="M4 7a1 1 0 0 1 1-1h1a1 1 0 0 1 0 2H5a1 1 0 0 1-1-1m5 0a1 1 0 0 1 1-1h9a1 1 0 1 1 0 2h-9a1 1 0 0 1-1-1m-5 5a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m5 0a1 1 0 0 1 1-1h9a1 1 0 1 1 0 2h-9a1 1 0 0 1-1-1m-5 5a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m5 0a1 1 0 0 1 1-1h9a1 1 0 1 1 0 2h-9a1 1 0 0 1-1-1" 
+     fill="aliceblue"/></svg></button>
+</div>  
+         
+         
+        <div id="en"> 
         <div class="categories" id="categoriesContainer">
-           <div class="metal">
-            <div class="category-card english" data-subject="english">
-                <span id="hia">English</span>
-                <button class="view-button">view</button>
-            </div>
+           
+           <div class="metal" data-subject-container="science">
+              <p class="pra3"> Uncover the wonders of the natural world and the power of scientific inquiry.</p>
+               <div class="category-card science" data-subject="science">
+                   <span id="hia">Science</span>
+                  <button class="view-button">view</button>
+               </div>
            </div>
-           <div class="metal">
-            <div class="category-card maths"data-subject="maths">
-                <span id="hia">Maths</span>
-                <button class="view-button">view</button>
-            </div>
+          
+          
+           <div class="metal" data-subject-container="english">
+               <div class="category-card english" data-subject="english">
+                   <span id="hia">English</span>
+                    <button class="view-button">view</button>
+               </div>
+                   <p class="pra1">Discover the world of the English language, its culture, and its importance
+                     as a global language for communication and knowledge.</p>
            </div>
-           <div class="metal">
-            <div class="category-card science" data-subject="science">
-                <span id="hia">Science</span>
-                <button class="view-button">view</button>
-            </div>
+           <div class="metal" data-subject-container="literature">
+                   <p class="pra4">Uncover the power of storytelling and the richness of human experience as reflected in literary works.</p>
+               <div class="category-card literature" data-subject="literature">
+                   <span id="hia">Literature</span>
+                   <button class="view-button">view</button>
+               </div>
            </div>
-           <div class="metal">
-            <div class="category-card literature" data-subject="literature">
-                <span id="hia">Literature</span>
-                <button class="view-button">view</button>
-            </div>
+          
+           <div class="metal" data-subject-container="maths">
+               <div class="category-card maths"data-subject="maths">
+                   <span id="hia">Maths</span>
+                   <button class="view-button">view</button>
+               </div>
+             <p class="pra2" >
+             Explore the fascinating universe of math, from fundamental concepts to advanced theories.</p>
            </div>
         </div>
-    </div>
-   
+      </div>    
+ </div>
+     
+     
+
+     
     <script >
       let darkmode= localStorage.getItem('darkmode')
       const themeswitch = document.getElementById('switch')
@@ -365,35 +516,103 @@ margin:0px;
    
    
   const searchInput = document.getElementById('searchInput');
-    const categoriesContainer = document.getElementById('categoriesContainer');
-    const categoryCards = document.querySelectorAll('.category-card');
+        const metalContainers = document.querySelectorAll('.metal');
 
-    searchInput.addEventListener('input', handleSearch);
+        searchInput.addEventListener('input', handleSearch);
 
-    function handleSearch() {
-        const searchText = searchInput.value.toLowerCase().trim();
+        function handleSearch() {
+            const searchText = searchInput.value.toLowerCase().trim();
 
-        categoryCards.forEach(card => {
-            const subject = card.dataset.subject.toLowerCase(); // هنستخدم الـ data attribute عشان نوصل لاسم المادة
+            metalContainers.forEach(container => {
+                const subjectContainer = container.dataset.subjectContainer.toLowerCase();
+                const categoryCard = container.querySelector('.category-card');
 
-            if (subject.startsWith(searchText)) {
-                card.classList.add('show');
-            } else {
-                card.classList.remove('show');
-            }
+                if (subjectContainer.startsWith(searchText)) {
+                    container.classList.remove('hidden');
+                    if (categoryCard) {
+                        categoryCard.classList.add('show');
+                    }
+                } else {
+                    container.classList.add('hidden');
+                    if (categoryCard) {
+                        categoryCard.classList.remove('show');
+                    }
+                }
 
-            // لو مربع البحث فاضي، نظهر كل الكروت تاني
-            if (searchText === '') {
-                card.classList.add('show');
+                
+                if (searchText === '') {
+                    container.classList.remove('hidden');
+                    if (categoryCard) {
+                        categoryCard.classList.add('show');
+                    }
+                }
+            });
+        }
+
+        
+        metalContainers.forEach(container => {
+            container.classList.remove('hidden');
+            const categoryCard = container.querySelector('.category-card');
+            if (categoryCard) {
+                categoryCard.classList.add('show');
             }
         });
-    }
+   
+   
+        
+        
+        
+      const sortButtonSimple = document.getElementById('sortButton');
+const categoriesContainerSimple = document.getElementById('categoriesContainer');
+let isSorted = false;
+let originalOrder = Array.from(categoriesContainerSimple.children);
 
-    // في الأول، نظهر كل الكروت
-    categoryCards.forEach(card => card.classList.add('show'));
-   
-   
-   
+sortButtonSimple.addEventListener('click', () => {
+    const itemsToSort = Array.from(categoriesContainerSimple.children);
+    categoriesContainerSimple.innerHTML = '';
+
+    if (isSorted) {
+        originalOrder.forEach(item => categoriesContainerSimple.appendChild(item.cloneNode(true)));
+        isSorted = false;
+    } else {
+        itemsToSort.sort((a, b) => (a.querySelector('.category-card span')?.textContent.toLowerCase() || '').localeCompare(b.querySelector('.category-card span')?.textContent.toLowerCase() || ''));
+        itemsToSort.forEach(item => categoriesContainerSimple.appendChild(item));
+        isSorted = true;
+  
+        if (!isSorted) {
+            originalOrder = Array.from(categoriesContainerSimple.children);
+        }
+    }
+});
+
+
+
+
+        
+        
+         
+         
+         
+         
+         const categoriesSection = document.querySelector('.categories'); 
+  const gridBtn = document.querySelector('.grid-view');
+  const listBtn = document.querySelector('.list-view');
+
+  gridBtn.addEventListener('click', () => {
+    categoriesSection.classList.remove('list-view');
+    categoriesSection.classList.add('grid-view');
+  });
+
+  listBtn.addEventListener('click', () => {
+    categoriesSection.classList.remove('grid-view');
+    categoriesSection.classList.add('list-view');
+  });
+         
+         
+         
+         
+         
+         
       </script>
   
 </body>

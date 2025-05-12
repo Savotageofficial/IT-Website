@@ -1,4 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+    /* .search-box {
+      margin-bottom: 20px;
+    } */
+/* 
+    input[type="text"] {
+      padding: 8px;
+      width: 200px;
+    } */
+
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 .header{
     position: fixed;
    background-color:#01014B;
@@ -85,19 +97,21 @@ a {
     border-radius: 50%;
     background: #01014B;
 }
-.bg{
+/* .bg{
     position: absolute;
-    height: 570px;
+    height: 590px;
     width: 800px;
-    background-image: linear-gradient(#D9D9D9 ,#737373);
+    background-image: linear-gradient(#D9D9D9 ,#737373); */
+    /* background-color: #868686;
     margin: 120px;
     padding-top: 90px;
+    border-radius: 30px;
 }
 
 .head{
     position: relative;
     background-color: white; 
-     margin-left:10px; 
+    margin-left:10px; 
     height: 59px;
     width: 730px;
     padding-right: 40px;
@@ -156,11 +170,278 @@ a {
     height: 45px;
     width: 110px;
 }
-.line1{
-    /* display: none; */
-}
-
-.head li{
+/* .line1{
+    margin-top: 20px;
+} */
+/* .head li{
     padding-top: 15px;
     margin-top: -11px;
 }
+
+.buttons{
+    border-radius: 20px;
+    background-color: #777777;
+    color:#ffffff;
+    border: solid;
+    border-color: #737373;
+    width: 70px;
+    height: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.buttons:active{
+    color: #717171;
+    background-color: #ffffff;
+
+}
+.mode{
+    background-color:#2d2d2d;
+}
+#bg.gray{
+    background-image: linear-gradient(#2d2d2d,#01014B);
+    color: #000;
+    
+}
+.lists li{
+    color: black;
+} */ 
+
+#ar{
+    display: none;
+            
+}
+#en{
+     display: none;
+ }
+ #ar.hiddenar{
+     display: block;
+ }
+ #en.hiddenen{
+    display: block;
+}
+
+
+body {
+    font-family: sans-serif;
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+  }
+body.dark-mode{
+    background-color: #121212;
+    color: white; 
+  }
+.dark{
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    cursor: pointer;
+}
+.subject1{
+    background-image: linear-gradient(#01014B,black);
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    color: aliceblue;
+    margin-bottom: 30px;
+}
+.subject2{
+    background-image: linear-gradient(#01014B,black);
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    margin-bottom: 30px
+   }
+.subject3{
+    background-image: linear-gradient(#01014B,black);
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: #01014B;
+    margin-bottom: 30px
+   }
+.subject4{
+    background-image: linear-gradient(#01014B,black);
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+   }
+.subject5{
+    background-image: linear-gradient(#01014B,black);
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+
+   }
+.subject6{
+    background-image: linear-gradient(#01014B,black);
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    margin-bottom: 30px
+   }
+
+.subject7{
+    background-image: linear-gradient(#01014B,black);
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+   }   
+.subject8{
+    background-image: linear-gradient(#01014B,black);
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    margin-bottom: 30px
+ }
+ .subject9{
+    background-image: linear-gradient(#01014B,black);
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    margin-bottom: 30px
+   }         
+.subject10{
+    background-image: linear-gradient(#01014B,black);
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    margin-bottom: 30px
+   }      
+.subject11{
+    background-image: linear-gradient(#01014B,black);
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+   }  
+.subject12{
+    background-image: linear-gradient(#01014B ,black);
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    margin-bottom: 30px
+   }       
+.choose{
+    width: 30px;
+    height: 30px;
+    margin-left: 90px;
+}    
+.text{
+    margin-left: 40px;
+    color: aliceblue;
+
+}    
+.grid{
+    display: grid;
+    grid-template-columns: 400px 400px 400px ;
+    float: right;
+    margin-top: 100px;
+
+}       
+.shadow:hover{
+    box-shadow: 10px 5px 20px 10px gray;
+    background-image: linear-gradient(#01014B,rgb(79, 78, 101));
+    transition: 0.5s ;
+    width: 320px;
+}   
+.save{
+    width: 100px;
+    height: 60px;
+    color: antiquewhite;
+    background-color: #01014B;
+    float: right;
+    margin-top: 1230px;
+    border-radius: 40px;
+    cursor: pointer;
+    border: solid;
+}
+.save:hover{
+    box-shadow: 10px 5px 20px 10px gray;
+    transition: 0.5s;
+}
+#btn{
+    cursor: pointer;
+}
+.cont{
+    float: right;
+    margin-top: 180px;
+    margin-right: 400px;
+    border-radius: 30px;
+    background-color: #e4e4e4;
+}
+.cont input{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 550px;
+    height: 27px;
+}
+.search-box{
+   border: 3px solid rgb(45, 45, 45);
+   width: 600px;
+   height: 30px;
+   border-radius: 30px;
+
+
+}
+.list-search li{
+    list-style: none;
+    padding-bottom:10px ;
+    width: 560px;
+    padding-left: 10px;
+}
+.list-search li:hover{
+   background-color: #808080;
+   border-radius: 30px;
+   cursor: pointer;
+} 
+.hide{
+    display: none;
+}
+#Button{
+    background-color: #01014B;
+    float: right;
+    width: 60px;
+    height: 40px;
+    margin-top: 1230px;
+    border-radius: 40px;
+    cursor: pointer;
+    border: solid;
+    margin-bottom: 20px;
+    padding-left: 35px;
+    padding-top: 15px;
+    margin-left: 100px;
+    color: #e4e4e4;
+
+}
+#Button:hover{
+     box-shadow: 10px 5px 20px 10px gray;
+     transition: .5s;
+}
+
+#list-search.list-search2{
+    display: block;
+
+}
+#list-search.list-search{
+    display: none;
+}   
+    .shadow {
+      display: none;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #aaa;
+      border-radius: 8px;
+      background-color: #f1f1f1;
+    }
+
+    .shadow.show {
+      display: block;
+    }
+.search{
+    border-radius: 30px;
+}    

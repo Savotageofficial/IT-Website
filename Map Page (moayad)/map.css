@@ -56,10 +56,10 @@ h2 {
    display:flex;
    padding: 15px;
    width:97%;
+   margin-top: -50px;
    border-bottom-left-radius:50px;
    border-bottom-right-radius:50px;}
 body{
-    background-image: url(manar.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -135,3 +135,36 @@ a {
     border-radius: 50%;
     background: #00188F;
 }
+body.dark-mode{
+    background-color: #121212;
+    color: white;
+    transition: 0.3s;
+    
+}
+body.dark-mode{
+    background-color: #121212;
+    color: white;
+    transition: 0.3s;
+    
+}
+body {
+   
+    color: black;
+    transition: 0.3s;
+  }
+
+.dark{
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    cursor: pointer;
+}
+.footer {
+    background: #001f4d;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 30px;
+}
+
+
